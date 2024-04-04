@@ -20,7 +20,7 @@ from canivete import limpa, cor
     def __init__(self,msg):
         self.msg(msg)"""
 
-arquivo = 'estudar0'
+arquivo = 'base'
 logging.basicConfig(filename=f'{arquivo}.py.log', filemode='w', encoding='utf-8', format='%(asctime)s %(levelname)s - %(message)s',
                     level=logging.DEBUG)
 log: Logger = logging.getLogger()
