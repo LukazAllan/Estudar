@@ -266,19 +266,20 @@
             ["Grupo dos Lantanídeos", ["Lantânio", "Cério", "Praseodímio", "Neodímio", "Promécio", "Samário", "Európio", "Gadolínio", "Térbio", "Disprósio", "Hólmio", "Érbio", "Túlio", "Itérbio", "Lutécio"]],
             ["Grupo dos Actinídeos", ["Actínio", "Tório", "Protactínio", "Urânio", "Netúnio", "Plutônio", "Amerício", "Cúrio", "Berquélio", "Califórnio", "Einstênio", "Férmio", "Mendelévio", "Nobélio", "Laurêncio"]]
         ],
-        "radicais orgânicos": [
+        "Radicais Orgânicos - Prefixos": [
             ["metil",["-CH₃", "H₃C-"]],
-            ["etil",["-C2H5", "H₃C-ĆH2"]],
-            ["propil",["-C₃H₇", "H₃C-CH-ĆH₃", "H₃Ć-CH-CH₃"]],
-            ["isopropil", "H₃C-CH-\n    ĆH2 "],
-            ["butil",["-C₄H₉", "H₃C-CH₂-CH₂-ĆH2"]],
+            ["etil",["-C₂H₅", "H₃C-ĆH₂"]],
+            ["propil",["-C₃H₇", "-CH₂-CH₂-CH₃","H₃C-CH₂-ĆH₂", "H₂Ć-CH₂-CH₃"]],
+            ["isopropil", "H₃C-CH-*\n    ĆH₃ "],
+            ["ciclopropil",["H₂C-CH-*\n   ∟ĆH₂", "*-CH-CH₂\nH₂Ć──┘  "]]
+            ["butil",["-C₄H₉", ["*-CH₂-CH₂-CH₂-CH₃","CH₃-CH₂-CH₂-CH₂-*","H₃C-CH₂-CH₂-ĆH2"]],
             ["secbutil",["H₃C-CH₂-ĆH-CH₃", "H₃C-ĆH-CH₂-CH₃"]],
             ["tercbutil", "    ÇH₃\nH₃C-C-\n    ĆH₃  "],
             ["isobutil", "H₃C-CH-CH₂-\n    ĆH₃   "]
         ],
         "funções inorgânicas": [
-            ["hidracido",["HCl", "H₂S", "HCN", "HF"]],
-            ["oxiacido",["HClO", "H₂P₃O₇", "H₂SO₃"]],
+            [["hidracido","acido"],["HCl", "H₂S", "HCN", "HF","HBr"]],
+            [["oxiacido","acido"],["HClO", "H₂P₃O₇", "H₂SO₃"]],
             ["oxido",["SO₃", "CO₂", "NO₃"]],
             ["base",["NaOH", "KOH", "Ca(OH)₂", "Al(OH)₃"]],
             ["sal",["NaCl", "MgCl₂", "KBr", "LiSO₃"]
@@ -304,8 +305,25 @@
             ["brometo de potássio", "KBr"],
             ["sulfeto de lítio", "LiSO₄"]
         ],
-        "funções orgânicas": [
-            ["alcool",["...anol", "...inol", "...dienol", "álcool ...ico"]],
+        "Funções Orgânicas - Hidrocarbonetos": [
+            ["Alcano","Formado por ligações simples. (Fórmula geral: CnH₂ₙ + 2)"],
+            ["Alceno","Presença de uma ligação dupla. (Fórmula geral: CnH₂ₙ)"],
+            ["Alcadieno","Presença de duas ligações duplas. (Fórmula geral: CnH₂ₙ - 2)"],
+            ["Alcino","Presença de uma ligação tripla. (Fórmula geral: CnH₂ₙ - 2)"],
+            ["Ciclano","Composto cíclico com ligações simples. (Fórmula geral: CnH₂ₙ)"],
+            ["Aromático","Possui anel benzênico"]
+        ],
+        "Funções Orgânicas - Oxigenadas": [
+          ["Ácido carboxílico",["Radical carboxílico ligado à cadeia carbônica.","Fórmula geral: R—COOH"]],
+          ["Álcool","Hidroxila ligada à cadeia carbônica. Fórmula geral: R—OH"],
+          ["Aldeído",["Carbonila ligada à extremidade da cadeia carbônica.","  O  \n  ║  \nR-C-H"]],
+          ["Cetona",["Carbonila ligada à duas cadeias carbônicas.", "   O   \n   ║   \nR₁-C-R₂"]],
+          ["Éster",["Radical éster ligado à duas cadeias carbônicas.","Carbonila ligado, diretamente a uma cadeia carbônica e, a um átomo de oxigênio ligado a outra cadeia carbônica.","   O     \n   ║     \nR₁-C-O-R₂"]],
+          ["Éter","Oxigênio entre duas cadeias carbônicas. Fórmula geral: R₁-O-R₂"],
+          ["Fenol","Hidroxila ligada ao anel aromático. Fórmula geral: Ar—OH"]
+        ],
+        "Terminações de Nomenclaturas de Compostos Orgânicos": [
+            ["alcool",["anol", "...inol", "...dienol", "álcool ...ico"]],
             ["enol", "...enol"],
             ["fenol",["...hidroxibenzeno", "...hidroxifenol"]],
             ["amida",["...amida", "n-metiletanamida"]],
@@ -315,7 +333,7 @@
             ["amina", "...amina"],
             ["trimetilamina", "H₃C-N-CH₃\n    ĆH₃"],
             ["cetona",["...ona", "...+...cetona"]],
-            ["acidocarb", "...oico"],
+            ["acidocarb", ["...oico","H-COOH","H₃C-COOH","H₃C-H₂C-COOH","  H H O   \n  | | ║   \nH-C-C-C-OH\n  | |     \n  H H     "]],
             ["salcarb", "...oato de metal"],
             ["anidrido", "anidrido etanoico-propanoico"],
             ["nitrila",["-CN", "...nitrila", "Cianeto de ...ila"]],
