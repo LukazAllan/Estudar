@@ -1,13 +1,36 @@
 {
     "biologia": {
         "Taxonomia": [
-            ["reino", ["Animalia", "Plantae", "Protoctista","Protista","Algas", "Monera", "Fungi"]],
+            ["Classificação", "Processo de organização dos seres vivos em grupos com base em suas características comuns."],
+            ["Nomenclatura Binomial", "Sistema de nomenclatura científica que utiliza dois termos, o gênero e a espécie, para nomear os organismos."],
+            ["Reino", "Categoria taxonômica que engloba organismos com características semelhantes."],
+            ["Domínio", "Categoria taxonômica que agrupa os seres vivos em três grupos principais: Archaea, Bacteria e Eukarya."],
+            ["Espécie", "Grupo fundamental da classificação biológica, composto por indivíduos que podem cruzar e gerar descendentes férteis."],
+            ["Filogenia", "Estudo das relações evolutivas entre os organismos, com base em características morfológicas, genéticas e moleculares."],
+            ["Filo", "Categoria taxonômica que agrupa várias classes semelhantes."],
+            ["Classe", "Categoria taxonômica que agrupa vários ordens semelhantes."],
+            ["Ordem", "Categoria taxonômica que agrupa várias famílias semelhantes."],
+            ["Família", "Categoria taxonômica que agrupa vários gêneros semelhantes."],
+            ["Gênero", "Categoria taxonômica que agrupa várias espécies semelhantes."],
+            ["Características Morfológicas", "Características físicas e estruturais dos organismos, utilizadas na taxonomia para identificação e classificação."],
+            ["Características Genéticas", "Características relacionadas ao material genético dos organismos, utilizadas na taxonomia para estabelecer relações de parentesco."],
+            ["Características Moleculares", "Características relacionadas às moléculas biológicas, como DNA e proteínas, utilizadas na taxonomia para estabelecer relações evolutivas."]
+        ],
+        "Old Taxonomia": [
+            ["reino", ["Animalia", "Plantae", "Protoctista","Protista", "Monera", "Fungi"]],
             ["domínio", ["Eukarya", "Archaea", "Bacteria"]],
             ["nomenclatura binomial", "Como nomeamos a espécie com dois nomes, sendo portanto, uma"],
             ["ancestral comum", "Somos diferentes porém temos um só"]
         ],
         "Reprodução": [
-            ["partenogênese", "Geração de nova planta por meio de sua folha/caule/raiz"]
+            ["Fecundação Externa","Processo de fertilização em que a união dos gametas ocorre fora do corpo dos indivíduos."  ],
+            ["Fecundação Interna","Processo de fertilização em que a união dos gametas ocorre dentro do corpo dos indivíduos."  ],
+            ["Divisão Binária","Processo de reprodução em que um organismo se divide em duas partes iguais."  ],
+            ["Brotamento","Processo de reprodução em que uma protuberância cresce no organismo e se desenvolve em um novo indivíduo."  ],
+            ["Fragmentação","Processo de reprodução em que um organismo se divide em partes, e cada parte se desenvolve em um novo indivíduo."  ],
+            ["Esporulação","Processo de reprodução em que células especiais (esporos) se formam e geram novos indivíduos."  ],
+            ["Partenogênese","estruturas vegetativas (raiz, caule e folha) são capazes de gerar uma nova planta"],
+            ["Propagação Vegetativa", "Geração de nova planta por meio de sua folha/caule/raiz"]
         ],
         "Reino Plantae": [
             ["briófitas",["parte duradoura gametófita", "Avascular"]],
@@ -17,10 +40,50 @@
         ]
     },
     "física": {
+        "Conceitos da Dinâmica":[
+            ["Dinâmica", "Ramo da física que estuda as causas do movimento dos corpos."],
+            [["Lei da Inércia","Inércia","Primeira Lei de Newton"], "“Um corpo permanece em seu estado de repouso ou movimento uniforme em linha reta, a menos que seja compelido a mudar esse estado por forças externas.”"],
+            [["Princípio Fundamental da Dinâmica","Segunda Lei de Newton"], "“A mudança de movimento é proporcional à força motora imprimida e é produzida na direção de linha reta na qual aquela força é aplicada.”"],
+            [["Lei da Ação e Reação","Ação e Reação","Terceira Lei de Newton"], "“A toda ação há sempre uma reação oposta e de igual intensidade: as ações mútuas de dois corpos um sobre o outro são sempre iguais e dirigidas em sentidos opostos.”"],
+            ["Força", "Agente capaz de modificar o estado de movimento ou de repouso de um corpo."],
+            ["Massa", "Medida da quantidade de matéria presente em um corpo."],
+            ["Lei Fundamental da Dinâmica (Segunda Lei de Newton)", "A resultante das forças que atuam sobre um corpo é diretamente proporcional à aceleração que ele adquire. A relação é dada pela fórmula F = m * a, onde F é a força resultante, m é a massa do corpo e a é a aceleração."],
+            ["Terceira Lei de Newton (Ação e Reação)", "Para toda ação, há uma reação de mesma magnitude, mesma direção e sentido contrário."],
+            ["Força Peso", "Força com que a Terra atrai um corpo em direção ao seu centro."],
+            ["Força Normal", "Força exercida por uma superfície sobre um corpo que a ela está apoiado, perpendicularmente à superfície."],
+            ["Força de Atrito", "Força que se opõe ao movimento relativo entre dois corpos em contato."],
+            ["Força de Tração", "Força exercida por um corpo sobre outro ao longo da direção de um fio, corda ou similar."],
+            ["Força Elástica", "Força restauradora que surge em um corpo deformado elasticamente e tende a restaurar sua forma original."],
+            ["Trabalho", "Energia transferida para ou a partir de um objeto devido à aplicação de uma força ao longo de uma distância."],
+            ["Energia Cinética", "Energia associada ao movimento de um objeto. É calculada pela fórmula Ec = mv²/2, onde m é a massa do objeto e v é sua velocidade."],
+            ["Energia Potencial Elástica", "Energia associada à deformação de uma mola, Epe = kx²/2"],
+            ["Energia Potencial Gravitacional", "Energia associada à altura de um objeto em relação a superfície do planeta, Epg = m.g.h"],
+            ["Energia Mecânica", "Soma das energias cinética e potencial de um sistema."],
+            ["Teorema do Trabalho e da Energia Cinética", "O trabalho realizado por todas as forças resultantes que atuam sobre um objeto é igual à mudança na energia cinética do objeto. Matematicamente, ( W = \\Delta KE )."],
+            ["Impulso", "A mudança na quantidade de movimento de um objeto devido à aplicação de uma força sobre ele durante um intervalo de tempo. É calculado pela fórmula ( J = F \\cdot \\Delta t ), onde F é a força aplicada e ( \\Delta t ) é o intervalo de tempo."],
+            ["Quantidade de Movimento (Momentum)", "Produto da massa de um objeto pela sua velocidade. É uma quantidade vetorial e sua conservação é uma importante lei da física. A quantidade de movimento de um sistema isolado permanece constante se nenhuma força externa atuar sobre ele."],
+            ["Colisões", "Interactions entre corpos durante um tempo muito curto, resultando em uma mudança nas velocidades dos corpos envolvidos. Podem ser elásticas, inelásticas ou parcialmente elásticas, dependendo da conservação da energia cinética durante a colisão."],
+            ["Trabalho realizado por uma Força Variável", "É dado pela integral da força em relação ao deslocamento ao longo da trajetória percorrida pelo objeto: ( W = \\int \\vec{F} \\cdot d\\vec{r} )."]
+              
+        ],
         "Dinâmica":[
             ["força elástica",["Fel = K.x","Fel = -K.x"]],
             ["força de atrito", "Fat = μ.N"],
             ["força","F = m.a"]
+        ],
+        "Conceitos da Cinemática":[
+            ["Cinemática", "Ramo da física que estuda o movimento dos corpos sem se preocupar com as causas desse movimento."],
+            [["Movimento Retilíneo Uniforme","MRU"], "Movimento no qual o móvel percorre distâncias iguais em intervalos de tempo iguais, mantendo velocidade constante."],
+            ["Velocidade", "Razão entre o deslocamento de um corpo e o intervalo de tempo decorrido para esse deslocamento."],
+            ["Aceleração", "Variação da velocidade de um corpo por unidade de tempo."],
+            [["Movimento Retilíneo Uniformemente Variado", "MRUV"], "Movimento no qual a velocidade do móvel varia uniformemente com o tempo, enquanto sua aceleração permanece constante."],
+            ["Equação de Torricelli", "Equação que relaciona a velocidade final, velocidade inicial, aceleração e deslocamento de um corpo em MRUV."],
+            [["Movimento Circular Uniforme", "MCU"], "Movimento no qual um corpo descreve uma trajetória circular com velocidade angular constante."],
+            ["Período", "Tempo necessário para que um corpo execute uma volta completa em um movimento circular."],
+            ["Frequência", "Número de voltas completas executadas por um corpo em um movimento circular em uma unidade de tempo."],
+            ["Velocidade Angular", "Razão entre o ângulo percorrido e o tempo decorrido para percorrê-lo em um movimento circular."],
+            ["Aceleração Centrípeta", "Aceleração dirigida para o centro de uma trajetória circular que mantém um corpo em movimento circular."],
+            ["Força Centrípeta", "Força resultante que atua sobre um corpo em movimento circular, direcionada para o centro da trajetória circular."]
         ],
         "Cinemática": [
             ["vel med", "ΔV = ΔS\n     Δt"],
@@ -271,8 +334,8 @@
             ["etil",["-C₂H₅", "H₃C-ĆH₂"]],
             ["propil",["-C₃H₇", "-CH₂-CH₂-CH₃","H₃C-CH₂-ĆH₂", "H₂Ć-CH₂-CH₃"]],
             ["isopropil", "H₃C-CH-*\n    ĆH₃ "],
-            ["ciclopropil",["H₂C-CH-*\n   ∟ĆH₂", "*-CH-CH₂\nH₂Ć──┘  "]]
-            ["butil",["-C₄H₉", ["*-CH₂-CH₂-CH₂-CH₃","CH₃-CH₂-CH₂-CH₂-*","H₃C-CH₂-CH₂-ĆH2"]],
+            ["ciclopropil",["H₂C-CH-*\n   ∟ĆH₂", "*-CH-CH₂\nH₂Ć──┘  "]],
+            ["butil",["-C₄H₉", "*-CH₂-CH₂-CH₂-CH₃","CH₃-CH₂-CH₂-CH₂-*","H₃C-CH₂-CH₂-ĆH2"]],
             ["secbutil",["H₃C-CH₂-ĆH-CH₃", "H₃C-ĆH-CH₂-CH₃"]],
             ["tercbutil", "    ÇH₃\nH₃C-C-\n    ĆH₃  "],
             ["isobutil", "H₃C-CH-CH₂-\n    ĆH₃   "]
