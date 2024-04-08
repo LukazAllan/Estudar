@@ -68,6 +68,7 @@
         ],
         "Dinâmica":[
             ["força elástica",["Fel = K.x","Fel = -K.x"]],
+            ["trabalho","W = F.d"],
             ["força de atrito", "Fat = μ.N"],
             ["força","F = m.a"]
         ],
