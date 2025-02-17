@@ -167,7 +167,7 @@
     "química": {
         "matéria":[
             ["Átomo", "Menor unidade de um elemento químico que mantém suas propriedades."],
-            ["Elemento químico", "Substância pura composta por átomos com o mesmo número de prótons."],
+            ["Elemento químico", "Conjunto de átomos que possuem o mesmo número atômico."],
             ["Molécula", "Estrutura formada por dois ou mais átomos quimicamente ligados."],
             ["Composto químico", "Substância pura composta por átomos de dois ou mais elementos diferentes combinados em proporções fixas."],
             ["Mistura", "Combinação física de duas ou mais substâncias que mantêm suas propriedades individuais."],

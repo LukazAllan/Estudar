@@ -64,7 +64,17 @@ else:
         # d = data[rm][ra]
         # input(d)
         q = None
-        print(f'rod: {j["r"]}  pto: {j["p"]}\nsobre {rm} em {ra}:')
+        #print(f'rod: {j["r"]}  pto: {j["p"]}\nsobre {rm} em {ra}:')
+        os.system('clear')
+        print("*"*54)
+        print("Estudando para o ENEM")
+        print("*"*54)
+        print(f"Rodada {j['r']:<9} | Pontuação {j['p']:>04}")
+        print("=-"*27)
+        print(f"Matéria: {rm.title():<10} | Assunto: {ra.capitalize()}")
+        print('-='*27)
+        
+
         log.info(f'0={d[0]} 1={d[1]}, ')
         sl = randint(0, len(d[1]) - 1)
         if type(d[1]) == list:
@@ -77,19 +87,20 @@ else:
                 q = input(f'{cor(rm)}{d[1]}{cor()} ')
             log.info(f'STDIN: input\nrod: {j["r"]}  pto: {j["p"]}\nsobre {rm} em {ra}:\n{d[1]}')
 
-        print(canivete.semacento(q), canivete.semacento(d[0]))
+        #answer check 
+        #print(canivete.semacento(q), canivete.semacento(d[0]))
         if type(d[0]) == str and canivete.semacento(q) == canivete.semacento(d[0]):
-            print('Certa resposta')
+            print('\033[42mCerta resposta!\033[m')
             j['p'] += 1
             log.info('str and certo')
             log.info(f'True \'{q}\' == \'{d[0]}\'')
         elif type(d[0]) == list and canivete.semacento(q) in canivete.semacento(d[0]):
-            print('Certa resposta')
+            print('\033[42mCerta resposta!\033[m')
             j['p'] += 1
             log.info('list and certo')
             log.info(f'True \'{q}\' == \'{d[0]}\'')
         else:
-            print(f'Incorreto.\nA resposta era {d[0]}')
+            print(f'\033[41mIncorreto.\033[m\nA resposta era {d[0]}')
             log.info('errado')
             log.info(f'False \'{q}\' != \'{d[0]}\'')
         w = input('sair? ')
