@@ -520,7 +520,58 @@
             ["nitro", "nitro..."]
         ],
         "fórmulas": [
-            ["molaridade", "N=m/MM"]
+            [["molaridade", "concentração molar"], "M = n₁\nV"],
+            [["molalidade", "concentração molal"], "W = n₁\nm₂"],
+            [["concentração comum", "concentração em g/L"], "C = m\nV"],
+            [["titulação", "cálculo de titulação"], "M₁ × V₁ = M₂ × V₂"],
+            [["número de mols", "quantidade de matéria"], "n = m\nMM"],
+            [["massa molar", "massa molecular"], "MM = soma das massas atômicas"],
+            [["densidade", "massa específica"], "d = m\nV"],
+            [["lei dos gases ideais", "equação de Clapeyron"], "P × V = n × R × T"],
+            [["pressão parcial", "lei de Dalton"], "P₁ = X₁ × Ptotal"],
+            [["fraçao molar", "fraçao em mol"], "X₁ = n₁\nntotal"],
+            [["pH", "potencial hidrogeniônico"], "pH = -log[H⁺]"],
+            [["pOH", "potencial hidroxiliônico"], "pOH = -log[OH⁻]"],
+            [["produto iônico da água", "Kw"], "Kw = [H⁺] × [OH⁻] = 10⁻¹⁴"],
+            [["relação pH e pOH", "escala pH"], "pH + pOH = 14"],
+            [["constante de equilíbrio", "Kc"], "Kc = [C]ᶜ × [D]ᵈ\n[A]ᵃ × [B]ᵇ"],
+            [["constante de acidez", "Ka"], "Ka = [H⁺] × [A⁻]\n[HA]"],
+            [["constante de basicidade", "Kb"], "Kb = [OH⁻] × [HB⁺]\n[B]"],
+            [["grau de equilíbrio", "α"], "α = quantidade que reagiu\nquantidade inicial"],
+            [["rendimento", "rendimento percentual"], "R = real × 100\nteórico"],
+            [["pureza", "grau de pureza"], "P = massa pura × 100\nmassa total"],
+            [["lei da velocidade", "cinética química"], "v = k × [A]ᵐ × [B]ⁿ"],
+            [["energia de ativação", "equação de Arrhenius"], "k = A × e^(-Ea/RT)"],
+            [["meia-vida", "vida média"], "t₁/₂ = ln2\nk"],
+            [["potencial da célula", "força eletromotriz"], "E°célula = E°red + E°ox"],
+            [["energia livre de Gibbs", "ΔG"], "ΔG = ΔH - TΔS"],
+            [["calor específico", "capacidade térmica mássica"], "Q = m × c × ΔT"],
+            [["calor latente", "calor de mudança de estado"], "Q = m × L"],
+            [["lei de Hess", "soma de entalpias"], "ΔH = ΣΔHprodutos - ΣΔHreagentes"],
+            [["eficiência energética", "rendimento energético"], "η = energia útil × 100\nenergia total"],
+            [["número de Avogadro", "constante de Avogadro"], "N = 6,02 × 10²³ mol⁻¹"],
+            [["constante dos gases", "R"], "R = 0,082 atm·L/mol·K"],
+            [["diluição", "cálculo de diluição"], "C₁ × V₁ = C₂ × V₂"],
+            [["mistura de soluções", "solução final"], "Cf = C₁V₁ + C₂V₂\nV₁ + V₂"]
+        ],
+        
+        "fórmulas orgânicas": [
+            [["fórmula molecular", "FM"], "Representa os átomos e quantidades reais na molécula"],
+            [["fórmula mínima", "fórmula empírica"], "Representa a proporção mínima entre os átomos"],
+            [["fórmula estrutural", "FE"], "Mostra as ligações entre os átomos"],
+            [["fórmula percentual", "composição centesimal"], "% = massa do elemento × 100\nmassa total"],
+            [["grau de insaturação", "índice de deficiência de hidrogênio"], "GI = (2C + 2 - H - X + N)\n2"],
+            [["densidade de vapor", "densidade gasosa"], "d = MM gás\nMM ar"],
+            [["massa molecular por ebuliometria", "elevação ebulioscópica"], "ΔTe = Ke × W × i"],
+            [["massa molecular por criometria", "abaixamento crioscópico"], "ΔTc = Kc × W × i"]
+        ],
+        
+        "fórmulas eletroquímicas": [
+            [["carga elétrica", "quantidade de eletricidade"], "Q = i × t"],
+            [["leis de Faraday", "eletrólise"], "m = E × Q\n96500"],
+            [["equivalente-grama", "massa equivalente"], "E = MM\nvalência"],
+            [["potencial padrão", "potencial de redução"], "E°red (medido em volt)"],
+            [["constante de equilíbrio redox", "K da reação redox"], "log K = n × E°\n0,059"]
         ]
     }
 }
