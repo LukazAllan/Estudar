@@ -1,42 +1,101 @@
 {
     "biologia": {
-        "Taxonomia": [
-            ["Classificação", "Processo de organização dos seres vivos em grupos com base em suas características comuns."],
-            ["Nomenclatura Binomial", "Sistema de nomenclatura científica que utiliza dois termos, o gênero e a espécie, para nomear os organismos."],
-            ["Reino", "Categoria taxonômica que engloba organismos com características semelhantes."],
-            ["Domínio", "Categoria taxonômica que agrupa os seres vivos em três grupos principais: Archaea, Bacteria e Eukarya."],
-            ["Espécie", "Grupo fundamental da classificação biológica, composto por indivíduos que podem cruzar e gerar descendentes férteis."],
-            ["Filogenia", "Estudo das relações evolutivas entre os organismos, com base em características morfológicas, genéticas e moleculares."],
-            ["Filo", "Categoria taxonômica que agrupa várias classes semelhantes."],
-            ["Classe", "Categoria taxonômica que agrupa vários ordens semelhantes."],
-            ["Ordem", "Categoria taxonômica que agrupa várias famílias semelhantes."],
-            ["Família", "Categoria taxonômica que agrupa vários gêneros semelhantes."],
-            ["Gênero", "Categoria taxonômica que agrupa várias espécies semelhantes."],
-            ["Características Morfológicas", "Características físicas e estruturais dos organismos, utilizadas na taxonomia para identificação e classificação."],
-            ["Características Genéticas", "Características relacionadas ao material genético dos organismos, utilizadas na taxonomia para estabelecer relações de parentesco."],
-            ["Características Moleculares", "Características relacionadas às moléculas biológicas, como DNA e proteínas, utilizadas na taxonomia para estabelecer relações evolutivas."]
+        "taxonomia": [
+            ["classificação", "Processo de organização dos seres vivos em grupos com base em suas características comuns."],
+            ["nomenclatura binomial", "Sistema de nomenclatura científica que utiliza dois termos: gênero (com inicial maiúscula) e espécie (com inicial minúscula)."],
+            ["reino", ["Animalia", "Plantae", "Fungi", "Protista", "Monera"]],
+            ["domínio", ["Eukarya", "Bacteria", "Archaea"]],
+            ["categorias taxonômicas", "Reino → Filo → Classe → Ordem → Família → Gênero → Espécie"],
+            ["espécie", "Grupo de indivíduos que podem cruzar e gerar descendentes férteis."],
+            ["filogenia", "Estudo das relações evolutivas entre os organismos."],
+            ["características morfológicas", "Características físicas e estruturais utilizadas na classificação."],
+            ["características genéticas", "Características do DNA utilizadas para estabelecer relações de parentesco."]
         ],
-        "Old Taxonomia": [
-            ["reino", ["Animalia", "Plantae", "Protoctista","Protista", "Monera", "Fungi"]],
-            ["domínio", ["Eukarya", "Archaea", "Bacteria"]],
-            ["nomenclatura binomial", "Como nomeamos a espécie com dois nomes, sendo portanto, uma"],
-            ["ancestral comum", "Somos diferentes porém temos um só"]
+        "reprodução": [
+            ["fecundação externa", "União dos gametas ocorre fora do corpo (ex: peixes, anfíbios)."],
+            ["fecundação interna", "União dos gametas ocorre dentro do corpo (ex: répteis, aves, mamíferos)."],
+            ["divisão binária", "Processo assexuado em que um organismo se divide em duas partes iguais (ex: bactérias)."],
+            ["brotamento", "Processo assexuado em que uma protuberância cresce e forma novo indivíduo (ex: hidras)."],
+            ["fragmentação", "Processo assexuado em que o organismo se divide e cada parte forma novo indivíduo (ex: planárias)."],
+            ["esporulação", "Formação de esporos que geram novos indivíduos (ex: fungos, samambaias)."],
+            ["partenogênese", "Desenvolvimento de óvulo não fecundado em novo indivíduo (ex: abelhas, alguns répteis)."],
+            ["propagação vegetativa", "Formação de nova planta a partir de estruturas vegetativas (ex: batata, morango)."],
+            ["ovíparos", "Ovos se desenvolvem fora do corpo materno."],
+            ["vivíparos", "Embrião se desenvolve dentro do corpo materno."],
+            ["ovovivíparos", "Ovos se desenvolvem dentro do corpo materno."]
         ],
-        "Reprodução": [
-            ["Fecundação Externa","Processo de fertilização em que a união dos gametas ocorre fora do corpo dos indivíduos."  ],
-            ["Fecundação Interna","Processo de fertilização em que a união dos gametas ocorre dentro do corpo dos indivíduos."  ],
-            ["Divisão Binária","Processo de reprodução em que um organismo se divide em duas partes iguais."  ],
-            ["Brotamento","Processo de reprodução em que uma protuberância cresce no organismo e se desenvolve em um novo indivíduo."  ],
-            ["Fragmentação","Processo de reprodução em que um organismo se divide em partes, e cada parte se desenvolve em um novo indivíduo."  ],
-            ["Esporulação","Processo de reprodução em que células especiais (esporos) se formam e geram novos indivíduos."  ],
-            ["Partenogênese","estruturas vegetativas (raiz, caule e folha) são capazes de gerar uma nova planta"],
-            ["Propagação Vegetativa", "Geração de nova planta por meio de sua folha/caule/raiz"]
+        "reino plantae": [
+            ["briófitas", ["Avasculares", "Dependem da água para reprodução", "Gametófito dominante", "Ex: musgos"]],
+            ["pteridófitas", ["Vasculares sem sementes", "Dependem da água para reprodução", "Esporófito dominante", "Ex: samambaias"]],
+            ["gimnospermas", ["Vasculares com sementes nuas", "Não dependem da água para reprodução", "Ex: pinheiros"]],
+            ["angiospermas", ["Vasculares com flores e frutos", "Frutos protegem as sementes", "Ex: plantas com flores"]],
+            ["monocotiledôneas", ["1 cotilédone", "Folhas com nervuras paralelas", "Raiz fasciculada"]],
+            ["dicotiledôneas", ["2 cotilédones", "Folhas com nervuras reticuladas", "Raiz pivotante"]],
+            ["fotossíntese", "Processo de produção de glucose a partir de CO₂, H₂O e luz."],
+            ["transpiração", "Perda de água pelas folhas na forma de vapor."]
         ],
-        "Reino Plantae": [
-            ["briófitas",["parte duradoura gametófita", "Avascular"]],
-            ["pteridófitas",["agora, parte duradoura esporófita", "surge vascularização"]],
-            ["gimnospermas", "surge a semente"],
-            ["angiospermas", "surge flores e frutos"]
+        "ecologia": [
+            ["cadeia alimentar", "Relação de alimentação entre organismos de um ecossistema."],
+            ["teia alimentar", "Conjunto de cadeias alimentares interligadas."],
+            ["níveis tróficos", ["Produtores", "Consumidores primários", "Consumidores secundários", "Consumidores terciários", "Decompositores"]],
+            ["ciclo do carbono", "Movimento do carbono entre atmosfera, seres vivos e solo."],
+            ["ciclo do nitrogênio", ["Fixação", "Nitrificação", "Desnitrificação", "Amonificação"]],
+            ["sucessão ecológica", "Processo de mudança gradual na composição de uma comunidade."],
+            ["relações ecológicas", ["Competição", "Predação", "Herbivoria", "Parasitismo", "Mutualismo", "Comensalismo"]],
+            ["biomas brasileiros", ["Amazônia", "Cerrado", "Mata Atlântica", "Caatinga", "Pampa", "Pantanal"]]
+        ],
+        "genética": [
+            ["DNA", "Ácido desoxirribonucleico - material genético."],
+            ["RNA", "Ácido ribonucleico - atua na síntese proteica."],
+            ["gene", "Segmento de DNA que codifica uma proteína."],
+            ["cromossomo", "Estrutura que contém os genes."],
+            ["mitose", "Divisão celular para crescimento e reparo."],
+            ["meiose", "Divisão celular para formação de gametas."],
+            ["1ª lei de Mendel", "Lei da segregação dos fatores."],
+            ["2ª lei de Mendel", "Lei da distribuição independente."],
+            ["grupos sanguíneos", ["Sistema ABO", "Sistema Rh"]],
+            ["herança ligada ao sexo", "Genes localizados no cromossomo X."]
+        ],
+        "evolução": [
+            ["seleção natural", "Processo em que organismos mais adaptados têm maior chance de sobreviver e reproduzir."],
+            ["deriva genética", "Mudanças aleatórias nas frequências gênicas de populações pequenas."],
+            ["especiação", "Processo de formação de novas espécies."],
+            ["evidências da evolução", ["Fósseis", "Anatomia comparada", "Embriologia", "Bioquímica"]],
+            ["teoria sintética da evolução", "Combinação da seleção natural com a genética."]
+        ],
+        "fisiologia humana": [
+            ["sistema digestório", ["Boca", "Esôfago", "Estômago", "Intestino delgado", "Intestino grosso"]],
+            ["sistema respiratório", ["Fossas nasais", "Traqueia", "Brônquios", "Alvéolos pulmonares"]],
+            ["sistema circulatório", ["Coração", "Artérias", "Veias", "Capilares"]],
+            ["sistema excretor", ["Rins", "Ureteres", "Bexiga", "Uretra"]],
+            ["sistema nervoso", ["Neurônios", "Sistema nervoso central", "Sistema nervoso periférico"]],
+            ["sistema endócrino", ["Hipotálamo", "Hipófise", "Tireoide", "Pâncreas", "Adrenais"]]
+        ],
+        "citologia": [
+            ["célula procariótica", ["Sem núcleo definido", "DNA no citoplasma", "Ex: bactérias"]],
+            ["célula eucariótica", ["Com núcleo definido", "Organelas membranosas", "Ex: animais, plantas"]],
+            ["membrana plasmática", "Barreira seletiva que controla entrada e saída de substâncias."],
+            ["mitocôndria", "Organela responsável pela respiração celular."],
+            ["cloroplasto", "Organela responsável pela fotossíntese nas plantas."],
+            ["núcleo", "Controla as atividades celulares e armazena o DNA."],
+            ["ribossomo", "Responsável pela síntese de proteínas."]
+        ],
+        "metabolismo celular": [
+            [["Ciclo de Calvin", "Fotossíntese"], "Fase de fixação do CO₂ na fotossíntese que ocorre no estroma dos cloroplastos."],
+            [["Ciclo de Krebs", "Ciclo do ácido cítrico"], "Série de reações químicas que ocorrem na matriz mitocondrial na respiração celular."],
+            [["Cadeia Respiratória", "Fosforilação Oxidativa"], "Processo na crista mitocondrial que produz ATP usando o gradiente de prótons."],
+            [["Glicólise", "Via de Embden-Meyerhof"], "Quebra da glicose em piruvato no citoplasma, produzindo 2 ATP e 2 NADH."],
+            [["Fermentação Lática", "Fermentação Lactoacidogênica"], "Processo anaeróbico que converte piruvato em lactato, regenerando NAD⁺."],
+            [["Fermentação Alcoólica", "Fermentação Etanólica"], "Processo anaeróbico que converte piruvato em etanol e CO₂."],
+            [["Fotólise da Água", "Reação de Hill"], "Quebra da molécula de água na fotossíntese, liberando O₂ e elétrons."],
+            [["Transporte de Elétrons", "Cadeia Transportadora de Elétrons"], "Série de proteínas na membrana que transferem elétrons liberando energia."],
+            [["Beta-oxidação", "β-oxidação"], "Processo de quebra de ácidos graxos no ciclo de Krebs."],
+            [["Ciclo da Ureia", "Ciclo da Ornitina"], "Processo no fígado que converte amônia em ureia para excreção."],
+            [["Gluconeogênese", "Neoglicogênese"], "Síntese de glicose a partir de precursores não-carboidratos."],
+            [["Glicogenólise", "Degradação do Glicogênio"], "Quebra do glicogênio em moléculas de glicose."],
+            [["Glicogênese", "Síntese do Glicogênio"], "Formação de glicogênio a partir da glicose."],
+            [["Fotofosforilação", "Fosforilação Fotossintética"], "Produção de ATP na fotossíntese usando energia luminosa."],
+            [["Quimiossíntese", "Síntese Química Autotrófica"], "Produção de matéria orgânica usando energia de reações químicas."]
         ]
     },
     "física": {
@@ -56,9 +115,9 @@
             ["Força Elástica", "Força restauradora que surge em um corpo deformado elasticamente e tende a restaurar sua forma original."],
             ["Trabalho", "Energia transferida para ou a partir de um objeto devido à aplicação de uma força ao longo de uma distância."],
             ["Energia Cinética", "Energia associada ao movimento de um objeto. É calculada pela fórmula Ec = mv²/2, onde m é a massa do objeto e v é sua velocidade."],
-            ["Energia Potencial Elástica", "Energia associada à deformação de uma mola, Epe = kx²/2"],
-            ["Energia Potencial Gravitacional", "Energia associada à altura de um objeto em relação a superfície do planeta, Epg = m.g.h"],
-            ["Energia Mecânica", "Soma das energias cinética e potencial de um sistema."],
+            [["Energia Potencial Elástica","Epe"], "Energia associada à deformação de uma mola, kx²/2"],
+            [["Energia Potencial Gravitacional", "Epg"], "Energia associada à altura de um objeto em relação a superfície do planeta, m.g.h"],
+            [["Energia Mecânica", "EM"], "Soma das energias cinética e potencial de um sistema."],
             ["Teorema do Trabalho e da Energia Cinética", "O trabalho realizado por todas as forças resultantes que atuam sobre um objeto é igual à mudança na energia cinética do objeto. Matematicamente, ( W = \\Delta KE )."],
             ["Impulso", "A mudança na quantidade de movimento de um objeto devido à aplicação de uma força sobre ele durante um intervalo de tempo. É calculado pela fórmula ( J = F \\cdot \\Delta t ), onde F é a força aplicada e ( \\Delta t ) é o intervalo de tempo."],
             ["Quantidade de Movimento (Momentum)", "Produto da massa de um objeto pela sua velocidade. É uma quantidade vetorial e sua conservação é uma importante lei da física. A quantidade de movimento de um sistema isolado permanece constante se nenhuma força externa atuar sobre ele."],
@@ -143,25 +202,81 @@
     },
     "matemática": {
         "funções quadráticas": [
-            ["bhaskara", "Δ = b²×4ac"],
-            ["xv", "-b\n2a"],
-            ["yv", "-Δ\n4a"]
+            ["bhaskara", "x = -b ± √Δ\n     2a"],
+            ["delta", "Δ = b² - 4ac"],
+            ["xv (x do vértice)", "-b\n2a"],
+            ["yv (y do vértice)", "-Δ\n4a"]
         ],
         "geometria plana": [
             ["área do quadrado", "l²"],
-            ["área do retângulo", "b×h"],
-            ["área do paralelogramo", "Ap = b×h"],
-            ["área do triângulo", "b×h/2"],
-            ["área do trapézio", "(B + b) × h\n   2       "],
-            ["área do losango", "D × d\n  2  "],
+            ["área do retângulo", "b × h"],
+            ["área do paralelogramo", "b × h"],
+            ["área do triângulo", "b × h\n  2"],
+            ["área do trapézio", "(B + b) × h\n      2      "],
+            ["área do losango", "D × d\n  2"],
             ["área do círculo", "πr²"],
-            ["área do polígono regular", "P × ap / 2"]
+            ["área do polígono regular", "P × ap\n   2"]
         ],
         "geometria espacial": [
             ["volume do cubo", "l³"],
-            ["volume do cilindro", "2π×r×h"],
-            ["volume do prisma retangular", "b×h×p"],
-            ["área do cilindro", "2π×r(h+r)"]
+            ["volume do cilindro", "πr²h"],
+            ["volume do prisma", "Ab × h"],
+            ["área do cilindro", "2πr(h + r)"]
+        ],
+        "álgebra e aritmética": [
+            ["termo geral da PA", "an = a1 + (n-1)r"],
+            ["soma da PA", "Sn = (a1 + an) × n\n        2"],
+            ["termo geral da PG", "an = a1 × qⁿ⁻¹"],
+            ["soma da PG finita", "Sn = a1(qⁿ - 1)\n     q - 1"],
+            ["juros simples", "J = C × i × t"],
+            ["juros compostos", "M = C(1 + i)ⁿ"],
+            ["combinação simples", "C(n,p) =     n!\n          p!(n-p)!"],
+            ["arranjo simples", "A(n,p) =     n!\n          (n-p)!"],
+            ["probabilidade", "P(A) = n(A)\n     n(Ω)"],
+            ["média aritmética", "x̄ = Σxi\n     n"],
+            ["mediana", "valor central dos dados ordenados"]
+        ],
+        "funções": [
+            ["função afim", "f(x) = ax + b"],
+            ["zero da função afim", "x = -b\n     a"],
+            ["função exponencial", "f(x) = aˣ, a>0 e a≠1"],
+            ["função logarítmica", "f(x) = logₐ(x)"],
+            ["propriedade do log", "log(a × b) = log a + log b"],
+            ["propriedade do log", "log(a/b) = log a - log b"],
+            ["mudança de base", "logₐ(b) = logₙ(b)\n          logₙ(a)"]
+        ],
+        "geometria analítica": [
+            ["distância entre pontos", "d = √[(x₂-x₁)² + (y₂-y₁)²]"],
+            ["ponto médio", "M = (x₁+x₂, y₁+y₂)\n        2        2"],
+            ["equação da reta", "y = ax + b"],
+            ["coeficiente angular", "a = y₂ - y₁\n     x₂ - x₁"],
+            ["equação da circunferência", "(x - x₀)² + (y - y₀)² = r²"]
+        ],
+        "trigonometria": [
+            ["seno", "sen θ = cateto oposto\n         hipotenusa"],
+            ["cosseno", "cos θ = cateto adjacente\n           hipotenusa"],
+            ["tangente", "tg θ = cateto oposto\n        cateto adjacente"],
+            ["relação fundamental", "sen²θ + cos²θ = 1"],
+            ["lei dos senos", "  a       b       c\n------ = ------ = ------\nsen A   sen B   sen C"],
+            ["lei dos cossenos", "a² = b² + c² - 2bc × cos A"],
+            ["área do triângulo (trig)", "A = a × b × sen θ\n          2"]
+        ],
+        "matemática financeira": [
+            ["montante juros simples", "M = C(1 + i × t)"],
+            ["montante juros compostos", "M = C(1 + i)ⁿ"],
+            ["taxa equivalente", "iq = (1 + it)ᵟ⁄ᵗ - 1"],
+            ["parcela financiamento", "P = PV × i × (1+i)ⁿ\n          (1+i)ⁿ - 1"]
+        ],
+        "análise de dados": [
+            ["média ponderada", "x̄ = Σ(wixi)\n     Σwi"],
+            ["desvio padrão amostral", "s = √Σ(xi - x̄)²\n        n - 1"],
+            ["variância", "s² = Σ(xi - x̄)²\n        n - 1"]
+        ],
+        "números complexos": [
+            ["forma algébrica", "z = a + bi"],
+            ["conjugado", "z̄ = a - bi"],
+            ["módulo", "|z| = √a² + b²"],
+            ["forma trigonométrica", "z = |z|(cosθ + isenθ)"]
         ]
     },
     "química": {
@@ -405,7 +520,58 @@
             ["nitro", "nitro..."]
         ],
         "fórmulas": [
-            ["molaridade", "N=m/MM"]
+            [["molaridade", "concentração molar"], "M = n₁\nV"],
+            [["molalidade", "concentração molal"], "W = n₁\nm₂"],
+            [["concentração comum", "concentração em g/L"], "C = m\nV"],
+            [["titulação", "cálculo de titulação"], "M₁ × V₁ = M₂ × V₂"],
+            [["número de mols", "quantidade de matéria"], "n = m\nMM"],
+            [["massa molar", "massa molecular"], "MM = soma das massas atômicas"],
+            [["densidade", "massa específica"], "d = m\nV"],
+            [["lei dos gases ideais", "equação de Clapeyron"], "P × V = n × R × T"],
+            [["pressão parcial", "lei de Dalton"], "P₁ = X₁ × Ptotal"],
+            [["fraçao molar", "fraçao em mol"], "X₁ = n₁\nntotal"],
+            [["pH", "potencial hidrogeniônico"], "pH = -log[H⁺]"],
+            [["pOH", "potencial hidroxiliônico"], "pOH = -log[OH⁻]"],
+            [["produto iônico da água", "Kw"], "Kw = [H⁺] × [OH⁻] = 10⁻¹⁴"],
+            [["relação pH e pOH", "escala pH"], "pH + pOH = 14"],
+            [["constante de equilíbrio", "Kc"], "Kc = [C]ᶜ × [D]ᵈ\n[A]ᵃ × [B]ᵇ"],
+            [["constante de acidez", "Ka"], "Ka = [H⁺] × [A⁻]\n[HA]"],
+            [["constante de basicidade", "Kb"], "Kb = [OH⁻] × [HB⁺]\n[B]"],
+            [["grau de equilíbrio", "α"], "α = quantidade que reagiu\nquantidade inicial"],
+            [["rendimento", "rendimento percentual"], "R = real × 100\nteórico"],
+            [["pureza", "grau de pureza"], "P = massa pura × 100\nmassa total"],
+            [["lei da velocidade", "cinética química"], "v = k × [A]ᵐ × [B]ⁿ"],
+            [["energia de ativação", "equação de Arrhenius"], "k = A × e^(-Ea/RT)"],
+            [["meia-vida", "vida média"], "t₁/₂ = ln2\nk"],
+            [["potencial da célula", "força eletromotriz"], "E°célula = E°red + E°ox"],
+            [["energia livre de Gibbs", "ΔG"], "ΔG = ΔH - TΔS"],
+            [["calor específico", "capacidade térmica mássica"], "Q = m × c × ΔT"],
+            [["calor latente", "calor de mudança de estado"], "Q = m × L"],
+            [["lei de Hess", "soma de entalpias"], "ΔH = ΣΔHprodutos - ΣΔHreagentes"],
+            [["eficiência energética", "rendimento energético"], "η = energia útil × 100\nenergia total"],
+            [["número de Avogadro", "constante de Avogadro"], "N = 6,02 × 10²³ mol⁻¹"],
+            [["constante dos gases", "R"], "R = 0,082 atm·L/mol·K"],
+            [["diluição", "cálculo de diluição"], "C₁ × V₁ = C₂ × V₂"],
+            [["mistura de soluções", "solução final"], "Cf = C₁V₁ + C₂V₂\nV₁ + V₂"]
+        ],
+        
+        "fórmulas orgânicas": [
+            [["fórmula molecular", "FM"], "Representa os átomos e quantidades reais na molécula"],
+            [["fórmula mínima", "fórmula empírica"], "Representa a proporção mínima entre os átomos"],
+            [["fórmula estrutural", "FE"], "Mostra as ligações entre os átomos"],
+            [["fórmula percentual", "composição centesimal"], "% = massa do elemento × 100\nmassa total"],
+            [["grau de insaturação", "índice de deficiência de hidrogênio"], "GI = (2C + 2 - H - X + N)\n2"],
+            [["densidade de vapor", "densidade gasosa"], "d = MM gás\nMM ar"],
+            [["massa molecular por ebuliometria", "elevação ebulioscópica"], "ΔTe = Ke × W × i"],
+            [["massa molecular por criometria", "abaixamento crioscópico"], "ΔTc = Kc × W × i"]
+        ],
+        
+        "fórmulas eletroquímicas": [
+            [["carga elétrica", "quantidade de eletricidade"], "Q = i × t"],
+            [["leis de Faraday", "eletrólise"], "m = E × Q\n96500"],
+            [["equivalente-grama", "massa equivalente"], "E = MM\nvalência"],
+            [["potencial padrão", "potencial de redução"], "E°red (medido em volt)"],
+            [["constante de equilíbrio redox", "K da reação redox"], "log K = n × E°\n0,059"]
         ]
     }
 }
