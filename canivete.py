@@ -1,5 +1,5 @@
-from os import path, system
-
+# Python 3.10+
+from os import path, system, name
 
 def tit(txt):
     t = int(len(txt) + 8)
@@ -80,13 +80,11 @@ def cor(md=None):
 
 
 def cls():
-    android: bool = path.exists('/storage/emulated/0')
-    windows: bool = path.exists('C:/Program Files')
-    linux: bool = path.exists('/home/')
-    if android or linux:
+    if name == 'nt':
+            system('cls')
+    else:
         system('clear')
-    if windows:
-        system('cls')
+    
 
 
 def limpa():

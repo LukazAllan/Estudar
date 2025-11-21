@@ -457,12 +457,11 @@
             ["isobutil", "H₃C-CH-CH₂-\n    ĆH₃   "]
         ],
         "funções inorgânicas": [
-            [["hidracido","acido"],["HCl", "H₂S", "HCN", "HF","HBr"]],
-            [["oxiacido","acido"],["HClO", "H₂P₃O₇", "H₂SO₃"]],
-            ["oxido",["SO₃", "CO₂", "NO₃"]],
-            ["base",["NaOH", "KOH", "Ca(OH)₂", "Al(OH)₃"]],
-            ["sal",["NaCl", "MgCl₂", "KBr", "LiSO₃"]
-            ]
+            [["hidrácido", "ácido sem oxigênio", "ácido"], ["HCl", "H₂S", "HCN", "HF", "HBr", "HI", "H₃P", "H₄Si", "H₂Se", "H₂Te", "HC≡CH", "H₂C₂", "H₃As", "H₂F₂"]],
+            [["oxiácido", "ácido com oxigênio", "ácido"], ["HClO", "H₂P₃O₇", "H₂SO₃", "H₂SO₄", "HNO₃", "H₃PO₄", "H₂CO₃", "HClO₃", "HClO₄", "H₃BO₃", "H₂CrO₄", "H₂Cr₂O₇", "HMnO₄", "H₄P₂O₇", "H₅P₃O₁₀", "H₆P₄O₁₃", "HNO₂", "H₃PO₃", "H₃AsO₄", "H₂SeO₄", "H₄SiO₄", "H₂MoO₄", "H₂WO₄", "H₃VO₄", "HReO₄", "H₅IO₆", "H₂S₂O₃", "H₂S₂O₇", "H₂S₂O₈"]],
+            [["óxido", "composto binário com oxigênio"], ["SO₃", "CO₂", "NO₃", "H₂O", "Fe₂O₃", "Al₂O₃", "CaO", "MgO", "Na₂O", "K₂O", "CuO", "ZnO", "PbO", "SiO₂", "P₂O₅", "P₄O₁₀", "N₂O", "NO", "NO₂", "N₂O₄", "N₂O₅", "SO₂", "Cl₂O", "Cl₂O₇", "CrO₃", "Mn₂O₇", "TiO₂", "V₂O₅", "WO₃", "MoO₃", "HgO", "Ag₂O", "BaO", "SrO"]],
+            [["base", "hidróxido", "base de Arrhenius"], ["NaOH", "KOH", "Ca(OH)₂", "Al(OH)₃", "Mg(OH)₂", "NH₄OH", "Fe(OH)₂", "Fe(OH)₃", "Cu(OH)₂", "Zn(OH)₂", "Pb(OH)₂", "Ba(OH)₂", "Sr(OH)₂", "LiOH", "RbOH", "CsOH", "AgOH", "Cr(OH)₃", "Mn(OH)₂", "Ni(OH)₂", "Co(OH)₂", "Sn(OH)₂", "Sn(OH)₄", "Sb(OH)₃", "Bi(OH)₃"]],
+            [["sal", "composto iônico"], ["NaCl", "MgCl₂", "KBr", "LiSO₃", "CaCO₃", "NaHCO₃", "Na₂CO₃", "KNO₃", "NaNO₂", "CaSO₄", "Na₂SO₄", "CuSO₄", "FeSO₄", "AgNO₃", "BaSO₄", "PbSO₄", "Na₃PO₄", "Ca₃(PO₄)₂", "NH₄Cl", "NaClO", "KMnO₄", "K₂Cr₂O₇", "Na₂S₂O₃", "CaCl₂", "AlCl₃", "ZnCl₂", "HgCl₂", "NaF", "KI", "NaBr", "CaF₂", "AgCl", "AgBr", "AgI", "NaCN", "KCN", "CaC₂", "Na₂O₂", "BaO₂", "Na₂S", "FeS", "ZnS", "PbS", "CuS", "HgS"]]
         ],
         "nomenclatura de compostos inorgânicos": [
             ["acido clorídrico", "HCl"],
