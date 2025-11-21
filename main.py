@@ -1,108 +1,95 @@
-# Python 3.12
-"""
-param log: logging module,
-param data: load file
-param d:
-param j:
-param r:
-param r2:
-param q:
-Δθλ¹²³⁰⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉⁺⁻⁽⁾"""
-from logging import Logger
-import canivete
-import json
-import logging
-import os
-import os.path as path
-from random import randint
-from canivete import limpa, cor
-"""class ArquivoJsonErro(Exception):
-    def __init__(self,msg):
-        self.msg(msg)"""
+import questionary
+from random import randint, choice
+from json import load
+from canivete import *
+from typing import Final
 
-arquivo = 'base'
-logging.basicConfig(filename=f'{arquivo}.py.log', filemode='w', encoding='utf-8', format='%(asctime)s %(levelname)s - %(message)s',
-                    level=logging.DEBUG)
-log: Logger = logging.getLogger()
-log.debug('__init__')
-
-if not path.isfile(f'{arquivo}.json'):
-    log.critical('O arquivo não foi carregado')
-    print('O arquivo não foi carregado')
-    pass
-else:
-    with open(f'{arquivo}.json', 'r', encoding='utf-8') as file:
-        data = dict(json.load(file))
-        # except:
-        # raise ArquivoJsonErro
-        file.close()
-    log.debug('loading...')
-    j = {'p': 0, 'r': 0}
-    while True:
-        limpa()
-        log.debug(f"rodada {j['r']}")
-        j['r'] += 1
-        caminho = data
-        ra = ''
-        for c in range(10):
-            #input(caminho)
-            if type(caminho) == dict:
-                escolha = randint(0, len(list(caminho.keys())) - 1)
-                if c == 0:
-                    rm = list(caminho.keys())[escolha].lower()
-                if c > 0:
-                    ra = ra + f'{list(caminho.keys())[escolha]}'
-                caminho = caminho[list(caminho.keys())[escolha]]
-            else:
-                d: object = caminho[randint(0, len(caminho) - 1)].copy()
-                break
-
-        # rm = list(data.keys())[randint(0, len(list(data.keys()))-1)]
-        # log.info(f'rm = {rm}')
-        # ra = list(data[rm].keys())[randint(0, len(list(data[rm].keys()))-1)]
-        # log.info(f'ra = {ra}')
-        # d = data[rm][ra]
-        # input(d)
-        q = None
-        #print(f'rod: {j["r"]}  pto: {j["p"]}\nsobre {rm} em {ra}:')
-        os.system('clear')
-        print("*"*54)
-        print("Estudando para o ENEM")
-        print("*"*54)
-        print(f"Rodada {j['r']:<9} | Pontuação {j['p']:>04}")
-        print("=-"*27)
-        print(f"Matéria: {rm.title():<10} | Assunto: {ra.capitalize()}")
-        print('-='*27)
+class Perguntas:
+    def __init__(self):
+        self.pontuacao = 0
+        self.rodada = 1
+        self.tema = ""
+        self.subtema = ""
         
+        with open("base.json", encoding="utf-8") as f:
+            self.base: Final[dict] = dict(load(f))
 
-        log.info(f'0={d[0]} 1={d[1]}, ')
-        sl = randint(0, len(d[1]) - 1)
-        if type(d[1]) == list:
-            log.info(f'd[1][sl] = {d[1][sl]}')
-            while not q or q == '':
-                q = input(f'{cor(rm)}{d[1][sl]}{cor()} ')
-            log.info(f'STDIN: input\nrod: {j["r"]}  pto: {j["p"]}\nsobre {rm} em {ra}:\n{d[1][sl]}')
-        elif type(d[1]) == str:
-            while not q or q == '':
-                q = input(f'{cor(rm)}{d[1]}{cor()} ')
-            log.info(f'STDIN: input\nrod: {j["r"]}  pto: {j["p"]}\nsobre {rm} em {ra}:\n{d[1]}')
+    def mostrar_titulo(self):
+        print("🎯" * 20)
+        print("    JOGO DE PERGUNTAS E RESPOSTAS")
+        print("🎯" * 20)
+        print(f"📊 Rodada: {self.rodada}")
+        print(f"✅ Acertos: {self.pontuacao}/{self.rodada - 1}")
+        print(f"Matéria: {self.tema:<10} | Assunto: {self.subtema.capitalize()}")
+        print()
 
-        #answer check 
-        #print(canivete.semacento(q), canivete.semacento(d[0]))
-        if type(d[0]) == str and canivete.semacento(q) == canivete.semacento(d[0]):
-            print('\033[42mCerta resposta!\033[m')
-            j['p'] += 1
-            log.info('str and certo')
-            log.info(f'True \'{q}\' == \'{d[0]}\'')
-        elif type(d[0]) == list and canivete.semacento(q) in canivete.semacento(d[0]):
-            print('\033[42mCerta resposta!\033[m')
-            j['p'] += 1
-            log.info('list and certo')
-            log.info(f'True \'{q}\' == \'{d[0]}\'')
+    def escolher_pergunta(self):
+        # escolhendo a pergunta
+        area_do_conhecimento = list(self.base.keys())
+        aleatorio_tema = randint(0, len(area_do_conhecimento)-1)
+        self.tema = area_do_conhecimento[aleatorio_tema]
+
+        sub_area = list(self.base[self.tema].keys())
+        aleatorio_subtema = randint(0, len(sub_area)-1)
+        self.subtema = sub_area[aleatorio_subtema]
+
+        #Ponto de Interesse
+        pi = choice(
+            self.base[self.tema][self.subtema].copy()
+        )
+        # escolha do lado e da pergunta
+        lado = choice([1, 0])
+        if type(pi[lado]) == list:
+            return {
+                'pergunta': choice(pi[lado]),
+                'resposta': pi[int(not lado)]
+            }
         else:
-            print(f'\033[41mIncorreto.\033[m\nA resposta era {d[0]}')
-            log.info('errado')
-            log.info(f'False \'{q}\' != \'{d[0]}\'')
-        w = input('sair? ')
-        if not w == '':
-            break
+            return {
+                'pergunta': pi[lado],
+                'resposta': pi[int(not lado)]
+            }
+
+    def validar_pergunta(self, resposta, questao):
+        if type(questao['resposta']) == str and \
+            semacento(resposta) == semacento(questao['resposta']):
+
+            self.pontuacao += 1
+            questionary.print("✅ CORRETO!", style="fg:green")
+            return True
+            
+        else: # type(questao['resposta']) == list:
+            for R in questao['resposta']:
+                if semacento(resposta) == semacento(questao['resposta']):
+                    self.pontuacao += 1
+                    questionary.print("✅ CORRETO!", style="fg:green")
+                    return True
+
+        questionary.print(f"❌ ERRADO! A resposta correta era: {questao['resposta'] }", style="fg:red")
+        return False
+            
+        
+        
+    def perguntar(self, questao:list):
+        questionary.print(questao['pergunta'], style='fg:yellow')
+        q = False
+        while not q or q == '':
+            q = questionary.text(f'Sua Resposta ').ask()
+
+        self.validar_pergunta(q, questao)
+
+    def run(self):
+        while True:
+            cls()
+            P = self.escolher_pergunta()
+            self.mostrar_titulo()
+            self.perguntar(P)
+            exit = questionary.text("Vai sair, meu nobre?", qmark="◀").ask()
+
+            if exit:
+                break
+            self.rodada +=1
+
+if __name__ == '__main__':
+    jogo = Perguntas()
+    jogo.run()
