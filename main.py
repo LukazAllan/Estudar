@@ -63,7 +63,7 @@ class Perguntas:
 
     def validar_pergunta(self,resposta, questao):
         if type(questao['resposta']) == str and \
-            semacento(resposta) == semacento(questao['resposta']):
+            semacento(resposta.lower()) == semacento(questao['resposta'].lower()):
 
             self.pontuacao += 1
             #self.resposta_certa()
@@ -71,7 +71,7 @@ class Perguntas:
             
         else: # type(questao['resposta']) == list:
             for R in questao['resposta']:
-                if semacento(resposta) == semacento(questao['resposta']):
+                if semacento(resposta.lower()) == semacento(R.lower()):
                     self.pontuacao += 1
                     #self.resposta_certa()
                     return True
