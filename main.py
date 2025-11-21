@@ -14,7 +14,12 @@ class Perguntas:
         with open("base.json", encoding="utf-8") as f:
             self.base: Final[dict] = dict(load(f))
 
+    def clean(self):
+        self.tema = ""
+        self.subtema = ""
+
     def mostrar_titulo(self):
+        cls()
         print("🎯" * 20)
         print("    JOGO DE PERGUNTAS E RESPOSTAS")
         print("🎯" * 20)
@@ -50,22 +55,27 @@ class Perguntas:
                 'resposta': pi[int(not lado)]
             }
 
-    def validar_pergunta(self, resposta, questao):
+    def resposta_certa(self):
+        questionary.print("✅ CORRETO!", style="fg:green")
+        
+    def resposta_errada(self, questao):
+        questionary.print(f"❌ ERRADO! A resposta correta era: {questao['resposta'] }", style="fg:red")
+
+    def validar_pergunta(self,resposta, questao):
         if type(questao['resposta']) == str and \
             semacento(resposta) == semacento(questao['resposta']):
 
             self.pontuacao += 1
-            questionary.print("✅ CORRETO!", style="fg:green")
+            #self.resposta_certa()
             return True
             
         else: # type(questao['resposta']) == list:
             for R in questao['resposta']:
                 if semacento(resposta) == semacento(questao['resposta']):
                     self.pontuacao += 1
-                    questionary.print("✅ CORRETO!", style="fg:green")
+                    #self.resposta_certa()
                     return True
-
-        questionary.print(f"❌ ERRADO! A resposta correta era: {questao['resposta'] }", style="fg:red")
+        #self.resposta_errada()
         return False
             
         
@@ -75,20 +85,26 @@ class Perguntas:
         q = False
         while not q or q == '':
             q = questionary.text(f'Sua Resposta ').ask()
+        return q
 
-        self.validar_pergunta(q, questao)
+        
 
     def run(self):
         while True:
-            cls()
             P = self.escolher_pergunta()
             self.mostrar_titulo()
-            self.perguntar(P)
+            esta_correto = self.validar_pergunta(self.perguntar(P), P)
+            self.mostrar_titulo()
+            if esta_correto:
+                self.resposta_certa()
+            else:
+                self.resposta_errada(P)
             exit = questionary.text("Vai sair, meu nobre?", qmark="◀").ask()
 
             if exit:
                 break
             self.rodada +=1
+            self.clean()
 
 if __name__ == '__main__':
     jogo = Perguntas()
