@@ -1,0 +1,1866 @@
+[
+    {
+        "ART.": "162, I",
+        "Chamada da infração": "Dirigir veículo sem possuir CNH",
+        "Valor": "880,41",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "162, II",
+        "Chamada da infração": "Dirigir veículo com CNH cassada ou suspensa",
+        "Valor": "880,41",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "162, III",
+        "Chamada da infração": "Dirigir com CNH de categoria errada",
+        "Valor": "586,94",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "162, VI",
+        "Chamada da infração": "Dirigir sem usar lentes corretoras de visão",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "162, V",
+        "Chamada da infração": "Dirigir com a CNH vencida (+30 dias)",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "163",
+        "Chamada da infração": "Entregar a direção a pessoa nas condições do artigo 162",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "164",
+        "Chamada da infração": "Permitir que pessoa nas condições do art. 162 dirija",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "165",
+        "Chamada da infração": "Dirigir sob a influência de álcool",
+        "Valor": "2.934,70",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "165-A",
+        "Chamada da infração": "Recusar o teste do bafômetro",
+        "Valor": "2.934,70",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "166",
+        "Chamada da infração": "Entregar a direção a pessoa habilitada sem condições de dirigir",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "167",
+        "Chamada da infração": "Deixar o condutor ou passageiro de usar o cinto de segurança",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "168",
+        "Chamada da infração": "Transportar crianças de forma irregular",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "169",
+        "Chamada da infração": "Dirigir sem atenção ou sem os cuidados indispensáveis à segurança",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "170",
+        "Chamada da infração": "Dirigir ameaçando os pedestres ou os demais veículos",
+        "Valor": "293",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "171",
+        "Chamada da infração": "Jogar água sobre os pedestres ou veículos",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "172",
+        "Chamada da infração": "Atirar do veículo ou abandonar na via objetos ou substâncias",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "173",
+        "Chamada da infração": "Disputar corrida",
+        "Valor": "2.934,70",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "174",
+        "Chamada da infração": "Promover racha",
+        "Valor": "2.934,70",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "175",
+        "Chamada da infração": "Realizar manobra perigosa",
+        "Valor": "2.934,70",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "176, I",
+        "Chamada da infração": "Condutor envolvido em acidente deixar de prestar socorro",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "176, II",
+        "Chamada da infração": "Condutor envolvido em acidente não adotar medidas de segurança no local",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "176, III",
+        "Chamada da infração": "Condutor envolvido em acidente não facilitar o trabalho da perícia",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "176, IV",
+        "Chamada da infração": "Condutor envolvido em acidente se recusar a mover o veículo do local",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "176, V",
+        "Chamada da infração": "Condutor envolvido em acidente não prestar informações p/ B.O.",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "177",
+        "Chamada da infração": "Deixar de prestar socorro à vítima de acidente quando solicitado",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "178",
+        "Chamada da infração": "Deixar o condutor, envolvido em acidente sem vítima, de remover o veículo",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "179, I",
+        "Chamada da infração": "Reparar veículo na faixa de rolamento quando for possível a remoção",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "179, II",
+        "Chamada da infração": "Reparar veículo nas demais vias quando for possível a remoção",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "180",
+        "Chamada da infração": "Ter seu veículo imobilizado na via por falta de combustível",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, I",
+        "Chamada da infração": "Estacionar o veículo nas esquinas",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, II",
+        "Chamada da infração": "Estacionar o veículo afastado da guia da calçada (50cm  1m)",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, III",
+        "Chamada da infração": "Estacionar o veículo afastado da guia da calçada (+ 1m)",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, IV",
+        "Chamada da infração": "Estacionar o veículo em desacordo com o CTB",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, V",
+        "Chamada da infração": "Estacionar o veículo na pista",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "181, VI",
+        "Chamada da infração": "Estacionar o veículo sobre hidrantes de incêndio",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, VII",
+        "Chamada da infração": "Estacionar o veículo nos acostamentos",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, VIII",
+        "Chamada da infração": "Estacionar o veículo no passeio, faixa de pedestre, ciclovia ou ciclofaixa,",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, IX",
+        "Chamada da infração": "Estacionar o veículo em garagem",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, X",
+        "Chamada da infração": "Estacionar o veículo impedindo a movimentação de outro veículo",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XI",
+        "Chamada da infração": "Estacionar o veículo em fila dupla",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XII",
+        "Chamada da infração": "Estacionar o veículo em cruzamento",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XIII",
+        "Chamada da infração": "Estacionar o veículo em parada de ônibus",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XIV",
+        "Chamada da infração": "Estacionar o veículo nos viadutos, pontes e túneis",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XV",
+        "Chamada da infração": "Estacionar o veículo na contramão de direção",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XVI",
+        "Chamada da infração": "Estacionar o veículo pesado em aclive ou declive sem calço",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XVII",
+        "Chamada da infração": "Estacionar o veículo em desacordo com a sinalização",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XVIII",
+        "Chamada da infração": "Estacionar o veículo em locais proibidos (placa  Proibido Estacionar)",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181, XIX",
+        "Chamada da infração": "Estacionar o veículo em locais proibidos (placa  Proibido Parar e Estacionar)",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "181",
+        "Chamada da infração": "nas vagas reservadas às pessoas com deficiência ou idosos, sem credencial",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "182, I",
+        "Chamada da infração": "Parar o veículo nas esquinas",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, II",
+        "Chamada da infração": "Parar o veículo afastado da guia da calçada (50cm  1m)",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, III",
+        "Chamada da infração": "Parar o veículo afastado da guia da calçada (+ 1m)",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, IV",
+        "Chamada da infração": "Parar o veículo em desacordo com o CTB",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, V",
+        "Chamada da infração": "Parar o veículo na pista",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, VI",
+        "Chamada da infração": "Parar o veículo na faixa de pedestres",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, VII",
+        "Chamada da infração": "Parar o veículo na área de cruzamento",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, VIII",
+        "Chamada da infração": "Parar o veículo nos viadutos, pontes e túneis",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, IX",
+        "Chamada da infração": "Parar o veículo na contramão de direção",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "182, X",
+        "Chamada da infração": "Parar o veículo em locais proibidos (placa  Proibido Parar)",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "183",
+        "Chamada da infração": "Parar o veículo sobre a faixa de pedestres na mudança de sinal",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "184, I",
+        "Chamada da infração": "Transitar na faixa da direita, exclusiva para um tipo de veículo",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "184, II",
+        "Chamada da infração": "Transitar na faixa da esquerda, exclusiva para um tipo de veículo",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "184, III",
+        "Chamada da infração": "Transitar na faixa exclusiva para um transporte coletivo",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "185, I",
+        "Chamada da infração": "deixar de conservar o veículo na faixa correta",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "185, II",
+        "Chamada da infração": "deixar de conservar o veículo lento na faixa da direita",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "186, I",
+        "Chamada da infração": "Transitar pela contramão em via de mão dupla, salvo ultrapassagem",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "186, II",
+        "Chamada da infração": "Transitar pela contramão em via de sentido único",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "187, I",
+        "Chamada da infração": "Transitar em locais e horários não permitidos (rodizio)",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "188",
+        "Chamada da infração": "Transitar ao lado de outro veículo perturbando o trânsito",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "189",
+        "Chamada da infração": "Deixar de dar passagem veículo em serviço de urgência",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "190",
+        "Chamada da infração": "Seguir veículo em serviço de urgência",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "191",
+        "Chamada da infração": "Forçar passagem entre veículos",
+        "Valor": "2.934,70",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "192",
+        "Chamada da infração": "Deixar de guardar distância de segurança",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "193",
+        "Chamada da infração": "Transitar com o veículo em local proibido (calçadas, ciclovias etc.)",
+        "Valor": "880,41",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "194",
+        "Chamada da infração": "Transitar em marcha à ré, salvo para pequenas manobras seguras",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "195",
+        "Chamada da infração": "Desobedecer às ordens da autoridade competente de trânsito",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "196",
+        "Chamada da infração": "Deixar de sinalizar a parada do veículo ou mudança de direção",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "197",
+        "Chamada da infração": "Não mudar de pista com antecedência para dobrar",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "198",
+        "Chamada da infração": "Deixar de dar passagem pela esquerda, quando solicitado",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "199",
+        "Chamada da infração": "Ultrapassar pela direita",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "200",
+        "Chamada da infração": "Ultrapassar pela direita veículo de transporte coletivo parado para embarque",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "201",
+        "Chamada da infração": "Deixar de guardar a distância lateral (01m50cm) ao ultrapassar bicicleta",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "202, I",
+        "Chamada da infração": "Ultrapassar veículo pelo acostamento",
+        "Valor": "1467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "202, II",
+        "Chamada da infração": "Ultrapassar veículo em interseções e passagens de nível",
+        "Valor": "1467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "203",
+        "Chamada da infração": "Ultrapassar pela contramão em curvas, aclives e declives",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "203, II",
+        "Chamada da infração": "Ultrapassar pela contramão veículo nas faixas de pedestre",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "203",
+        "Chamada da infração": "Ultrapassar pela contramão veículo em pontes, viadutos ou túneis",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "203, IV",
+        "Chamada da infração": "Ultrapassar pela contramão veículo parado por impedimento à circulação",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "203, V",
+        "Chamada da infração": "Ultrapassar em faixa amarela contínua",
+        "Valor": "1.467,35",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "204",
+        "Chamada da infração": "Não aguardar no acostamento a oportunidade de cruzar a pista",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "205",
+        "Chamada da infração": "Ultrapassar cortejo, préstito, desfile e formações militares sem autorização",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "206, I",
+        "Chamada da infração": "Executar operação de retorno em locais proibidos pela sinalização",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "206, II",
+        "Chamada da infração": "Executar retorno nas curvas, aclives, declives, pontes, viadutos e túneis",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "206, III",
+        "Chamada da infração": "Executar retorno passando por local proibido (calçadas, ciclovias etc.)",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "206, IV",
+        "Chamada da infração": "Executar retorno entrando na contramão da via transversal",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "206, V",
+        "Chamada da infração": "Executar retorno com prejuízo da circulação ou da segurança",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "207",
+        "Chamada da infração": "Executar operação de conversão à direita ou à esquerda em locais proibidos",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "208",
+        "Chamada da infração": "Avançar o sinal vermelho do semáforo ou o de parada obrigatória",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "209",
+        "Chamada da infração": "Transpor bloqueio viário sem autorização",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "209",
+        "Chamada da infração": "Deixar de adentrar às áreas destinadas à pesagem de veículos",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "209",
+        "Chamada da infração": "Evadir-se para não efetuar o pagamento do pedágio",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "210",
+        "Chamada da infração": "Transpor, sem autorização, bloqueio viário policial",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "211",
+        "Chamada da infração": "Ultrapassar veículos em fila, parados em sinal luminoso, ou qualquer obstáculo",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "212",
+        "Chamada da infração": "Deixar de parar o veículo antes de transpor linha férrea",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "213, I",
+        "Chamada da infração": "Deixar de parar o veículo por agrupamento de pessoas (passeatas)",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "213, II",
+        "Chamada da infração": "Deixar de parar o veículo por agrupamento de veículos (cortejos)",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "214, I",
+        "Chamada da infração": "Deixar de dar preferência a pedestre que se encontre na faixa",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "214, II",
+        "Chamada da infração": "Não deixar pedestre concluir a travessia, mesmo com sinal verde",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "214, III",
+        "Chamada da infração": "Deixar de dar preferência a portadores de deficiência, crianças, idosos e gestantes",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "214, IV",
+        "Chamada da infração": "Deixar de dar preferência a pedestre quando houver iniciado a travessia",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "214, V",
+        "Chamada da infração": "Deixar de dar preferência a pedestre que esteja atravessando a via transversal para onde se dirige o veículo",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "215, I",
+        "Chamada da infração": "Deixar de dar preferência em interseção a veículo circulando por rodovia, rotatória ou que venha da direita",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "215, II",
+        "Chamada da infração": "Deixar de dar preferência nas interseções com sinalização de Dê a Preferência",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "216",
+        "Chamada da infração": "Entrar ou sair de áreas lindeiras sem as precauções de segurança",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "217",
+        "Chamada da infração": "Entrar ou sair de fila de veículos estacionados sem dar preferência de passagem a pedestres e a outros veículos",
+        "Valor": "130,16",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "218, I",
+        "Chamada da infração": "Transitar em velocidade superior à máxima permitida em até 20%",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "218, II",
+        "Chamada da infração": "Transitar em velocidade superior à máxima permitida em 20% até 50%.",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "218, III",
+        "Chamada da infração": "Transitar em velocidade superior a 50% da máxima permitida",
+        "Valor": "880,41",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "219",
+        "Chamada da infração": "Transitar em velocidade inferior à metade permitida",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, I",
+        "Chamada da infração": "Deixar de reduzir a velocidade ao se aproximar de passeatas, aglomerações, cortejos, préstitos e desfiles",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "220, II",
+        "Chamada da infração": "Deixar de reduzir a velocidade onde o trânsito esteja sendo controlado por agente",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, III",
+        "Chamada da infração": "Deixar de reduzir a velocidade ao aproximar-se da calçada ou acostamento",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, IV",
+        "Chamada da infração": "Deixar de reduzir a velocidade ao aproximar-se de interseção não sinalizada",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, V",
+        "Chamada da infração": "Deixar de reduzir a velocidade nas vias rurais cuja faixa de domínio não esteja cercada",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, VI",
+        "Chamada da infração": "Deixar de reduzir a velocidade nos trechos em curva de pequeno raio",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, VII",
+        "Chamada da infração": "Deixar de reduzir a velocidade nos trechos com obras ou trabalhadores na pista",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220",
+        "Chamada da infração": "Deixar de reduzir a velocidade sob chuva, neblina, cerração ou ventos fortes",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, IX",
+        "Chamada da infração": "Deixar de reduzir a velocidade quando houver má visibilidade",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220",
+        "Chamada da infração": "Deixar de reduzir a velocidade quando o pavimento for escorregadio, defeituoso ou avariado",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, XI",
+        "Chamada da infração": "Deixar de reduzir a velocidade ao se aproximar de animais na pista",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, XII",
+        "Chamada da infração": "Deixar de reduzir a velocidade em declive",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220, XIII",
+        "Chamada da infração": "Deixar de reduzir a velocidade ao ultrapassar ciclista",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "220",
+        "Chamada da infração": "Deixar de reduzir a velocidade perto grande movimentação de pedestres (escolas, hospitais, etc.)",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "221",
+        "Chamada da infração": "Portar no veículo placas de identificação irregulares",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "222",
+        "Chamada da infração": "Não ligar giroflex nas situações de atendimento de emergência (ambulâncias e viaturas)",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "223",
+        "Chamada da infração": "Transitar com o farol desregulado ou com luz alta",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "224",
+        "Chamada da infração": "Fazer uso de luz alta em vias providas de iluminação pública",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "225, I",
+        "Chamada da infração": "Deixar de sinalizar a via quando tiver de remover o veículo da pista ou permanecer no acostamento",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "225, II",
+        "Chamada da infração": "Deixar de sinalizar a via quando a carga for derramada sobre a via",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "226",
+        "Chamada da infração": "Deixar de retirar objeto que tenha sido utilizado para sinalização temporária da via",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "227, I",
+        "Chamada da infração": "Usar buzina em situação que não a de advertência ao pedestre ou a condutores",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "227, II",
+        "Chamada da infração": "Usar buzina prolongada e sucessivamente a qualquer pretexto",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "227, III",
+        "Chamada da infração": "Usar buzina entre as vinte e duas e as seis horas",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "227, IV",
+        "Chamada da infração": "Usar buzina em locais e horários proibidos pela sinalização",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "227, V",
+        "Chamada da infração": "Usar buzina em desacordo com estabelecido pelo CONTRAN",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "228",
+        "Chamada da infração": "Usar som no veículo em volume não autorizado pelo CONTRAN",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "229",
+        "Chamada da infração": "Usar alarme ou aparelho que produza sons e ruído que perturbem o sossego público",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, I",
+        "Chamada da infração": "Conduzir o veículo com placa ou qualquer elemento de identificação violado ou falsificado",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "230, II",
+        "Chamada da infração": "transportar passageiros em compartimento de carga",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "230, III",
+        "Chamada da infração": "Conduzir o veículo com dispositivo anti-radar",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "230, IV",
+        "Chamada da infração": "Conduzir o veículo sem qualquer uma das placas de identificação",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "230, V",
+        "Chamada da infração": "Conduzir o veículo que não esteja registrado e devidamente licenciado",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "230, VI",
+        "Chamada da infração": "Conduzir o veículo com a placa ilegível",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "230, VII",
+        "Chamada da infração": "Conduzir o veículo com a cor ou característica alterada",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, VIII",
+        "Chamada da infração": "Conduzir o veículo não inspecionado, quando obrigatório",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, IX",
+        "Chamada da infração": "Conduzir o veículo sem equipamento obrigatório",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, X",
+        "Chamada da infração": "Conduzir o veículo com equipamento obrigatório em desacordo com o CONTRAN",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XI",
+        "Chamada da infração": "Conduzir o veículo com descarga livre ou silenciador defeituoso",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XII",
+        "Chamada da infração": "Conduzir o veículo com equipamento ou acessório proibido",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XIII",
+        "Chamada da infração": "Conduzir o veículo com o sistema de iluminação e de sinalização alterados",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XIV",
+        "Chamada da infração": "Conduzir o veículo com registrador de velocidade viciado ou defeituoso, quando obrigatório",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XV",
+        "Chamada da infração": "Conduzir o veículo adesivado, salvo quando autorizado pelo CTB",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XVI",
+        "Chamada da infração": "Conduzir o veículo com vidros cobertos por películas, painéis decorativos ou pinturas",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XVII",
+        "Chamada da infração": "Conduzir o veículo com cortinas ou persianas fechadas, não autorizadas pela legislação",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XVIII",
+        "Chamada da infração": "Conduzir o veículo em mau estado de conservação comprometendo a segurança",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XVIII",
+        "Chamada da infração": "Conduzir o veículo reprovado na inspeção de segurança e de emissão de poluentes e ruído",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XIX",
+        "Chamada da infração": "Conduzir o veículo sem acionar o limpador de para-brisa sob chuva",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XX",
+        "Chamada da infração": "Conduzir o veículo sem portar a autorização para condução de escolares",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XXI",
+        "Chamada da infração": "Conduzir o veículo de carga sem inscrição da tara e demais previstas no CTB",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XXII",
+        "Chamada da infração": "Conduzir o veículo com defeito de iluminação, de sinalização ou com lâmpadas queimadas",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "230, XXIII",
+        "Chamada da infração": "Conduzir o veículo de carga ou passageiros em desacordo com aos intervalos para descanso",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, I",
+        "Chamada da infração": "Transitar com o veículo danificando a via",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "231, II",
+        "Chamada da infração": "Transitar com o veículo derramando combustível ou lubrificante ou qualquer objeto que traga risco",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "231, III",
+        "Chamada da infração": "Transitar produzindo fumaça, gases ou partículas em níveis superiores aos fixados pelo CONTRAN",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, IV",
+        "Chamada da infração": "Transitar com o veículo de dimensões ou de sua carga superiores aos limites",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, V",
+        "Chamada da infração": "Transitar com o veículo com excesso de peso (R$ 130,16 + acréscimo previsto nas alíneas de acordo com o excesso)",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, VI",
+        "Chamada da infração": "Transitar em desacordo com a autorização para transitar com dimensões excedentes, ou com esta vencida",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, VII",
+        "Chamada da infração": "Transitar com o veículo com lotação excedente",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, VIII",
+        "Chamada da infração": "Efetuar transporte remunerado de passageiros sem autorização",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, IX",
+        "Chamada da infração": "Transitar com o veículo desligado ou desengrenado",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "231, X",
+        "Chamada da infração": "Transitar com o veículo excedendo a capacidade máxima de tração",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "232",
+        "Chamada da infração": "Conduzir veículo sem os documentos de porte obrigatório referidos no CTB",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "233",
+        "Chamada da infração": "Deixar de efetuar o registro de veículo no prazo de trinta dias",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "234",
+        "Chamada da infração": "Falsificar ou adulterar documento de habilitação e de identificação do veículo",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "235",
+        "Chamada da infração": "Conduzir pessoas, animais ou carga nas partes externas do veículo",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "236",
+        "Chamada da infração": "Rebocar outro veículo com cabo flexível ou corda, salvo em casos de emergência",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "237",
+        "Chamada da infração": "Transitar com o veículo sem a simbologia e identificação exigidas",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "238",
+        "Chamada da infração": "Recusar-se a entregar os documentos à autoridade",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "239",
+        "Chamada da infração": "Retirar do local veículo legalmente retido para regularização",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "240",
+        "Chamada da infração": "Deixar o responsável de promover a baixa de veículo irrecuperável ou definitivamente desmontado",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "241",
+        "Chamada da infração": "Deixar de atualizar o cadastro de registro do veículo ou de habilitação do condutor",
+        "Valor": "88,38",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "242",
+        "Chamada da infração": "Fazer falsa declaração de domicílio para fins de registro, licenciamento ou habilitação",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "243",
+        "Chamada da infração": "Empresa seguradora não comunicar a ocorrência de perda total do veículo e devolver as placas e documentos",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "244, I",
+        "Chamada da infração": "Conduzir moto sem usar capacete com viseira ou óculos e vestuário de acordo com o CONTRAN",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "244, II",
+        "Chamada da infração": "Conduzir moto transportando passageiro sem o capacete ou fora do assento correto",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "244, III",
+        "Chamada da infração": "Conduzir moto fazendo malabarismo ou empinando",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "244, IV",
+        "Chamada da infração": "Conduzir moto com os faróis apagados",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "244, V",
+        "Chamada da infração": "Conduzir moto transportando criança menor de 07 anos",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspende"
+    },
+    {
+        "ART.": "244, VI",
+        "Chamada da infração": "Conduzir moto rebocando outro veículo",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "244, VII",
+        "Chamada da infração": "Conduzir moto sem segurar o guidom com ambas as mãos",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "244, VIII",
+        "Chamada da infração": "Conduzir moto transportando carga incompatível",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "244, IX",
+        "Chamada da infração": "Conduzir moto efetuando transporte remunerado em desacordo com a lei",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "245",
+        "Chamada da infração": "Utilizar a via para depósito de mercadorias, materiais ou equipamentos, sem autorização",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "246",
+        "Chamada da infração": "Deixar de sinalizar obstáculo à livre circulação, à segurança, ou obstaculizar a via indevidamente",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "247",
+        "Chamada da infração": "Deixar de conduzir veículos de tração humana ou animal pelo bordo da pista, em fila única",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "248",
+        "Chamada da infração": "Transportar em veículo destinado ao transporte de passageiros carga excedente",
+        "Valor": "195,23",
+        "Gravidade": "Grave",
+        "Pontos": 5,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "249",
+        "Chamada da infração": "Não acender as luzes de posição à noite quando estiver parado para embarque ou carga de mercadorias",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "250",
+        "Chamada da infração": "I, “a deixar de manter acesa a luz baixa a noite",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "250",
+        "Chamada da infração": "I, “b deixar de manter acesa a luz baixa de dia, nos túneis e nas rodovias",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "250",
+        "Chamada da infração": "I, “c veículo de transporte coletivo deixar de manter acesa a luz baixa de dia e de noite, circulando em faixas ou pistas a eles destinadas",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "250",
+        "Chamada da infração": "I, “d deixar de manter acesa a luz baixa de dia e de noite, tratando-se de ciclomotores",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "250, II",
+        "Chamada da infração": "deixar de manter acesas pelo menos as luzes de posição sob chuva forte, neblina ou cerração;",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "250, III",
+        "Chamada da infração": "deixar de manter a placa traseira iluminada à noite;",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "251, I",
+        "Chamada da infração": "Utilizar o pisca alerta, exceto em imobilizações ou situações de emergência",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "251, II",
+        "Chamada da infração": "Dar sinal de luz, salvo para alertar ultrapassagem",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "252, I",
+        "Chamada da infração": "Dirigir o veículo com o braço do lado de fora",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "252, II",
+        "Chamada da infração": "Dirigir o veículo transportando pessoas",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "252, III",
+        "Chamada da infração": "Dirigir o veículo com incapacidade que comprometa a segurança do trânsito",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "252, IV",
+        "Chamada da infração": "Dirigir usando calçado que não se firme nos pés ou que comprometa a utilização os pedais",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "252, V",
+        "Chamada da infração": "Dirigir o veículo com apenas uma das mãos, salvo quando necessário",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "252, V",
+        "Chamada da infração": "§ Parágrafo único, no caso de o condutor estar segurando ou manuseando telefone celular",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "252, VI",
+        "Chamada da infração": "Dirigir o veículo utilizando-se de fones nos ouvidos",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "252, VII",
+        "Chamada da infração": "Dirigir o veículo utilizando-se de fone nos ouvidos",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "253",
+        "Chamada da infração": "Bloquear a via com veículo",
+        "Valor": "293,47",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Não suspende"
+    },
+    {
+        "ART.": "253-A",
+        "Chamada da infração": "Usar veículo para interromper a circulação da via sem autorização",
+        "Valor": "8.804,10",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspensão de 12 meses"
+    },
+    {
+        "ART.": "253-A § 1º",
+        "Chamada da infração": "organizar interrupção da circulação da via sem autorização",
+        "Valor": "17.608,20",
+        "Gravidade": "Gravíssima",
+        "Pontos": 7,
+        "Suspende a CNH?": "Suspensão de 12 meses"
+    },
+    {
+        "ART.": "254, I",
+        "Chamada da infração": "É proibido ao pedestre andar nas pistas, exceto para cruzá-las onde for permitido",
+        "Valor": "44,19",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "254, II",
+        "Chamada da infração": "É proibido ao pedestre cruzar a pista nos viadutos, pontes, ou túneis, salvo onde exista permissão",
+        "Valor": "44,19",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "254, III",
+        "Chamada da infração": "É proibido ao pedestre atravessar a via dentro das áreas de cruzamento",
+        "Valor": "44,19",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "254, IV",
+        "Chamada da infração": "É proibido ao pedestre usar a via para evento (passeata) sem autorização",
+        "Valor": "44,19",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "254, V",
+        "Chamada da infração": "É proibido ao pedestre andar fora da faixa, passarela, passagem aérea ou subterrânea",
+        "Valor": "44,19",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "254, VI",
+        "Chamada da infração": "É proibido ao pedestre desobedecer à sinalização de trânsito específica",
+        "Valor": "44,19",
+        "Gravidade": "Leve",
+        "Pontos": 3,
+        "Suspende a CNH?": ""
+    },
+    {
+        "ART.": "255",
+        "Chamada da infração": "Conduzir bicicleta em calçada onde não seja permitida a circulação desta, ou de forma agressiva",
+        "Valor": "130,16",
+        "Gravidade": "Média",
+        "Pontos": 4,
+        "Suspende a CNH?": ""
+    }
+]
