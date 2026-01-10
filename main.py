@@ -1,17 +1,20 @@
 import questionary
 from random import randint, choice
-from json import load
+from commentjson import load
 from canivete import *
 from typing import Final
 
+BASE = 'a'
+
 class Perguntas:
     def __init__(self):
+        global BASE
         self.pontuacao = 0
         self.rodada = 1
         self.tema = ""
         self.subtema = ""
         
-        with open("base_grafo.json", encoding="utf-8") as f:
+        with open(BASE, encoding="utf-8") as f:
             self.base: Final[dict] = dict(load(f))
 
     def clean(self):
@@ -36,22 +39,25 @@ class Perguntas:
     
         data = self.base[area][sub]
     
-        nodes = list(data["nodes"].keys())
-        pergunta = choice(nodes)
-    
-        id_pergunta = data["nodes"][pergunta]
+        escolha = choice(data["edges"])
+        id_pergunta = escolha[0] # pergunta é sempre a origem ou escolha[0]
+
+        for p, id in data["nodes"].items():
+            if id == id_pergunta:
+                pergunta = p
+                break
     
         respostas_validas = [
             destino
             for origem, destino in data["edges"]
             if origem == id_pergunta
         ]
-    
+
         # converter ids de volta para texto
         respostas_texto = [
             node for node, nid in data["nodes"].items() if nid in respostas_validas
         ]
-    
+        
         return {
             "pergunta": pergunta,
             "respostas": respostas_texto
