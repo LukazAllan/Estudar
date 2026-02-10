@@ -1,17 +1,20 @@
 import questionary
 from random import randint, choice
-from json import load
+from commentjson import load
 from canivete import *
 from typing import Final
 
+BASE = 'base.json'
+
 class Perguntas:
     def __init__(self):
+        global BASE
         self.pontuacao = 0
         self.rodada = 1
         self.tema = ""
         self.subtema = ""
         
-        with open("base.json", encoding="utf-8") as f:
+        with open(BASE, encoding="utf-8") as f:
             self.base: Final[dict] = dict(load(f))
 
     def clean(self):
@@ -29,56 +32,50 @@ class Perguntas:
         print()
 
     def escolher_pergunta(self):
-        # escolhendo a pergunta
-        area_do_conhecimento = list(self.base.keys())
-        aleatorio_tema = randint(0, len(area_do_conhecimento)-1)
-        self.tema = area_do_conhecimento[aleatorio_tema]
+        area = choice(list(self.base.keys()))
+        sub = choice(list(self.base[area].keys()))
+        self.tema = area
+        self.subtema = sub
+    
+        data = self.base[area][sub]
+    
+        escolha = choice(data["edges"])
+        id_pergunta = escolha[0] # pergunta é sempre a origem ou escolha[0]
 
-        sub_area = list(self.base[self.tema].keys())
-        aleatorio_subtema = randint(0, len(sub_area)-1)
-        self.subtema = sub_area[aleatorio_subtema]
+        for p, id in data["nodes"].items():
+            if id == id_pergunta:
+                pergunta = p
+                break
+    
+        respostas_validas = [
+            destino
+            for origem, destino in data["edges"]
+            if origem == id_pergunta
+        ]
 
-        #Ponto de Interesse
-        pi = choice(
-            self.base[self.tema][self.subtema].copy()
-        )
-        # escolha do lado e da pergunta
-        lado = choice([1, 0])
-        if type(pi[lado]) == list:
-            return {
-                'pergunta': choice(pi[lado]),
-                'resposta': pi[int(not lado)]
-            }
-        else:
-            return {
-                'pergunta': pi[lado],
-                'resposta': pi[int(not lado)]
-            }
-
+        # converter ids de volta para texto
+        respostas_texto = [
+            node for node, nid in data["nodes"].items() if nid in respostas_validas
+        ]
+        
+        return {
+            "pergunta": pergunta,
+            "respostas": respostas_texto
+        }
+    
     def resposta_certa(self):
         questionary.print("✅ CORRETO!", style="fg:green")
         
     def resposta_errada(self, questao):
-        questionary.print(f"❌ ERRADO! A resposta correta era: {questao['resposta'] }", style="fg:red")
+        corretas = " | ".join(questao["respostas"])
+        questionary.print(f"❌ ERRADO! Respostas possíveis: {corretas}", style="fg:red")
 
-    def validar_pergunta(self,resposta, questao):
-        if type(questao['resposta']) == str and \
-            semacento(resposta.lower()) == semacento(questao['resposta'].lower()):
-
-            self.pontuacao += 1
-            #self.resposta_certa()
-            return True
-            
-        else: # type(questao['resposta']) == list:
-            for R in questao['resposta']:
-                if semacento(resposta.lower()) == semacento(R.lower()):
+    def validar_pergunta(self, resposta, questao):
+            for r in questao["respostas"]:
+                if semacento(resposta) == semacento(r):
                     self.pontuacao += 1
-                    #self.resposta_certa()
                     return True
-        #self.resposta_errada()
-        return False
-            
-        
+            return False
         
     def perguntar(self, questao:list):
         questionary.print(questao['pergunta'], style='fg:yellow')
@@ -86,6 +83,12 @@ class Perguntas:
         while not q or q == '':
             q = questionary.text(f'Sua Resposta ').ask()
         return q
+    
+    def menu(self):
+        print("Menu do Jogo")
+        print(f"""
+
+""")
 
         
 
