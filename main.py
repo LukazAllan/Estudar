@@ -4,7 +4,7 @@ from commentjson import load
 from canivete import *
 from typing import Final
 
-BASE = 'a'
+BASE = 'base.json'
 
 class Perguntas:
     def __init__(self):
@@ -83,6 +83,12 @@ class Perguntas:
         while not q or q == '':
             q = questionary.text(f'Sua Resposta ').ask()
         return q
+    
+    def menu(self):
+        print("Menu do Jogo")
+        print(f"""
+
+""")
 
         
 
