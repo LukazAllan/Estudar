@@ -135,7 +135,7 @@ class Perguntas:
             return False
         
     def perguntar(self, questao:list):
-        questionary.print(questao['pergunta'], style='fg:yellow')
+        questionary.print(questao['pergunta'] + "\n", style='fg:yellow')
         q = False
         while not q or q == '':
             q = questionary.text(f'Sua Resposta ').ask()
