@@ -28,7 +28,7 @@ class Editor:
     
     def save_base(self):
         global BASE, ENCODING
-        with open(BASE, 'w', encoding=ENCODING) as f:
+        with open("new_"+BASE, 'w', encoding=ENCODING) as f:
             dump(self.base, f, indent=4, ensure_ascii=False)
     
     def menu_principal(self):
@@ -138,9 +138,11 @@ class Editor:
             "Opção:",
             choices=[
                 "1. Adicionar Nó",
-                "1-1. Adicionar Nó e Conectar",
+                "1-1. Adicionar Nó e Conectar Arestas",
                 "2. Editar Nó",
                 "3. Remover Nó",
+                "4. Conectar Nó",
+                "5. Remover Aresta",
                 "0. Voltar"
                 ]
         ).ask()
@@ -176,7 +178,7 @@ class Editor:
         
         lista_valores = list(nodes.values())
         if len(lista_valores) > 0:
-            assist = questionary.confirm(f"Deseja usar o número do último nó + 1? ({lista_valores[-1]} +1) [NO/yes]", default=False).ask()
+            assist = questionary.confirm(f"Deseja usar o número do último nó + 1? ({lista_valores[-1]} +1)", default=False).ask()
         
         if assist:
             valor = lista_valores[-1] + 1
@@ -225,12 +227,12 @@ class Editor:
             if escolha == "P":
                 # conectar como P
                 edges.append([nodes[no], nodes[no_destino]])
-                questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Pergunta para '{no_destino}:{nodes[no_destino]}'", style="fg:green")
+                questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Pergunta para '{no_destino}:{nodes[no_destino]}'", style="fg:green")
                 # conected_nodes_as_P.append([nodes[no], nodes[no_destino]])
             else:
                 # conectar como R
                 edges.append([nodes[no_destino], nodes[no]])
-                questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Resposta para '{no_destino}:{nodes[no_destino]}'", style="fg:green")
+                questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Resposta para '{no_destino}:{nodes[no_destino]}'", style="fg:green")
                 # conected_nodes_as_R.append([nodes[no_destino], nodes[no]])
 
         # questionary.print(f"Nós conectados como P: {conected_nodes_as_P}")
@@ -246,24 +248,24 @@ class Editor:
         escolha = questionary.select(
             "Deseja conectar este nó como P ou R?",
             default="P",
-            choices=["P", "R", "0"]
+            choices=["P", "R","PR", "0"]
         ).ask()
         if escolha == "0":
             questionary.print("Conexão cancelada. Voltando ao menu de edição de nós.", style="fg:cyan")
             input("Pressione Enter para continuar...")
             return 0
-        if escolha == "P":
+        if escolha == "PR":
             # conectar como P
             choices = []
             for node in nodes:
                 add = True
                 for edge in edges:
                     if edge[0] == nodes[no] and edge[1] == nodes[node]:
-                        choices.append(questionary.Choice(title=f"{edge[1]}", value=edge[1], checked=add))
+                        choices.append(questionary.Choice(title=f"{node}", value=edge[1], checked=True))
                         add = False
                         break
                 if add:
-                    choices.append(questionary.Choice(title=f"{nodes[node]}", value=nodes[node], checked=add))
+                    choices.append(questionary.Choice(title=f"{node}", value=nodes[node], checked=False))
             no_destino: str = questionary.checkbox(
                 "Escolha o outro nó:",
                 choices= choices
@@ -272,11 +274,49 @@ class Editor:
                 add = True
                 for edge in edges:
                     if edge[0] == nodes[no] and edge[1] == destino:
-                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Pergunta para '{destino}:{nodes[destino]}'", style="fg:yellow")
+                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Pergunta para 'X:{destino}'", style="fg:yellow")
+                        add = False
                         break
                 if add:
                     edges.append([nodes[no], destino])
-                    questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Pergunta para '{destino}:{nodes[destino]}'", style="fg:green")
+                    questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Pergunta para 'X:{destino}'", style="fg:green")
+                add = True
+                for edge in edges:
+                    if edge[0] == destino and edge[1] == nodes[no]:
+                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Resposta para 'X:{destino}'", style="fg:yellow")
+                        add = False
+                        break
+                if add:
+                    edges.append([destino, nodes[no]])
+                    questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Resposta para 'X:{destino}'", style="fg:green")
+            questionary.print(f"Nós '{no}:{nodes[no]}' conectados para {no_destino}", style="fg:green")
+            return 1
+        elif escolha == "P":
+            # conectar como P
+            choices = []
+            for node in nodes:
+                add = True
+                for edge in edges:
+                    if edge[0] == nodes[no] and edge[1] == nodes[node]:
+                        choices.append(questionary.Choice(title=f"{node}", value=edge[1], checked=True))
+                        add = False
+                        break
+                if add:
+                    choices.append(questionary.Choice(title=f"{node}", value=nodes[node], checked=False))
+            no_destino: str = questionary.checkbox(
+                "Escolha o outro nó:",
+                choices= choices
+            ).ask()
+            for destino in no_destino:
+                add = True
+                for edge in edges:
+                    if edge[0] == nodes[no] and edge[1] == destino:
+                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Pergunta para 'X:{destino}'", style="fg:yellow")
+                        add = False
+                        break
+                if add:
+                    edges.append([nodes[no], destino])
+                    questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Pergunta para 'X:{destino}'", style="fg:green")
             questionary.print(f"Nós '{no}:{nodes[no]}' conectados como Pergunta para {no_destino}", style="fg:green")
             return 1
         else:
@@ -286,11 +326,11 @@ class Editor:
                 add = True
                 for edge in edges:
                     if edge[0] == nodes[node] and edge[1] == nodes[no]:
-                        choices.append(questionary.Choice(title=f"{edge[1]}", value=edge[1], checked=add))
+                        choices.append(questionary.Choice(title=f"{node}", value=edge[1], checked=True))
                         add = False
                         break
                 if add:
-                    choices.append(questionary.Choice(title=f"{nodes[node]}", value=nodes[node], checked=add))
+                    choices.append(questionary.Choice(title=f"{node}", value=nodes[node], checked=False))
             no_destino: str = questionary.checkbox(
                 "Escolha o outro nó:",
                 choices= choices
@@ -299,18 +339,38 @@ class Editor:
                 add = True
                 for edge in edges:
                     if edge[0] == destino and edge[1] == nodes[no]:
-                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Resposta para '{destino}:{nodes[destino]}'", style="fg:yellow")
+                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Resposta para 'X:{destino}'", style="fg:yellow")
+                        add = False
                         break
                 if add:
                     edges.append([destino, nodes[no]])
-                    questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Resposta para '{destino}:{nodes[destino]}'", style="fg:green")
+                    questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Resposta para 'X:{destino}'", style="fg:green")
             questionary.print(f"Nós '{no}:{nodes[no]}' conectados como Resposta para {no_destino}", style="fg:green")
             return 1
 
-    def editar_no(self, materia, assunto, no):
-        pass
+    def editar_no(self, materia, assunto, no: str):
+        nodes = self.base[materia][assunto]['nodes']
+        cls()
+        print(f'>/{materia}/{assunto}')
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE NÓS":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f"Nó: {no}:{nodes[no]}")
+        while True:
+            novo_nome = questionary.text("Digite o novo nome do nó:").ask()
+            if not novo_nome.strip():
+                questionary.print("Nome inválido. Nenhum alteração foi feita.", style="fg:red")
+                input("Pressione Enter para continuar...")
+                continue
+            break
+        self.base[materia][assunto]['nodes'][no] = novo_nome
+        questionary.print(f"Nó '{no}:{nodes[no]}' editado para '{no}:{novo_nome}'", style="fg:green")
+        input("Pressione Enter para continuar...")
 
     def remover_no(self, materia, assunto, no):
+        pass
+
+    def remover_aresta(self, materia, assunto, no):
         pass
     
     def exibe_nos(self, materia, assunto):
@@ -355,22 +415,28 @@ class Editor:
                                                 elif ME == "1. Adicionar Nó":
                                                     self.adicionar_no(a_materia, o_assunto)
                                                     continue
-                                                elif ME == "1-1. Adicionar Nó e Conectar":
+                                                elif ME == "1-1. Adicionar Nó e Conectar Arestas":
                                                     no, valor = self.adicionar_no(a_materia, o_assunto)
-                                                    self.conectar_no(a_materia, o_assunto, no)
+                                                    self.full_conectar_no(a_materia, o_assunto, no)
                                                     continue
                                                 o_no = self.escolher_no(a_materia, o_assunto)
+                                                if o_no == "0. Voltar":
+                                                    break
                                                 match ME:
                                                     case "2. Editar Nó":
                                                         self.editar_no(a_materia, o_assunto,o_no)
                                                     case "3. Remover Nó":
                                                         self.remover_no(a_materia, o_assunto,o_no)
+                                                    case "4. Conectar Nó":
+                                                        self.full_conectar_no(a_materia, o_assunto,o_no)
+                                                    case "5. Remover Aresta":
+                                                        self.remover_aresta(a_materia, o_assunto,o_no)
                                         case "0. Voltar":
                                             break
                             case "0. Voltar":
                                 break
                 case "0. Sair":
-                    #self.save_base()
+                    self.save_base()
                     break
 
 
