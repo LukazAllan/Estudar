@@ -2,7 +2,6 @@ import questionary
 from random import randint, choice
 from commentjson import load
 from canivete import *
-from typing import Final
 
 BASE = 'base.json'
 
@@ -16,7 +15,7 @@ class Perguntas:
         
     def load_base(self):
         with open(BASE, encoding="utf-8") as f:
-            self.base: Final[dict] = dict(load(f))
+            self.base: dict = dict(load(f))
             self.temas = list(self.base.keys())
             self.subtemas = {tema: list(self.base[tema].keys()) for tema in self.temas}
 

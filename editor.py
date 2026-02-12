@@ -15,6 +15,12 @@ def cls():
     else:
         system('clear')
 
+def find_key_by_value(d, value):
+    for key, val in d.items():
+        if val == value:
+            return key
+    return None
+
 class Editor:
     def __init__(self):
         self.load_base()
@@ -49,7 +55,7 @@ class Editor:
                 "2. Adicionar Matéria",
                 "3. Editar Nome de Matéria",
                 "4. Remover Matéria",
-                "0. Sair"
+                "0. Sair e Salvar"
                 ]
         ).ask()
         return escolha
@@ -143,6 +149,7 @@ class Editor:
                 "3. Remover Nó",
                 "4. Conectar Nó",
                 "5. Remover Aresta",
+                "6. Ver Conexões de Nó",
                 "0. Voltar"
                 ]
         ).ask()
@@ -372,7 +379,28 @@ class Editor:
 
     def remover_aresta(self, materia, assunto, no):
         pass
-    
+
+    def ver_conexoes_no(self, materia, assunto, no: str):
+        cls()
+        nodes = self.base[materia][assunto]['nodes']
+        edges = self.base[materia][assunto]['edges']
+        print(f'>/{materia}/{assunto}')
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"VISUALIZAÇÃO DE CONEXÕES DE NÓ":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
+        todos_nos = 0
+        for edge in range(len(list(edges))):
+            if edges[edge][0] == nodes[no]:
+                print(f"Nó '{no}' conectado como Pergunta para '{find_key_by_value(nodes, edges[edge][1])}'")
+                todos_nos += 1
+            elif edges[edge][1] == nodes[no]:
+                print(f"Nó '{no}' conectado como Resposta para '{find_key_by_value(nodes, edges[edge][0])}'")
+                todos_nos += 1
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f"Total de conexões para o nó '{no}': {todos_nos} conexões")
+        questionary.print("Pressione Enter para continuar...", style="fg:cyan")
+        input()
+
     def exibe_nos(self, materia, assunto):
         cls()
         print(f'>/{materia}/{assunto}')
@@ -431,11 +459,13 @@ class Editor:
                                                         self.full_conectar_no(a_materia, o_assunto,o_no)
                                                     case "5. Remover Aresta":
                                                         self.remover_aresta(a_materia, o_assunto,o_no)
+                                                    case "6. Ver Conexões de Nó":
+                                                        self.ver_conexoes_no(a_materia, o_assunto,o_no)
                                         case "0. Voltar":
                                             break
                             case "0. Voltar":
                                 break
-                case "0. Sair":
+                case "0. Sair e Salvar":
                     self.save_base()
                     break
 
