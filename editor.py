@@ -1,9 +1,19 @@
 from json import load, dump
-from canivete import *
+# from canivete import cls
 import questionary
+from os import get_terminal_size as gts, system, name as OSNAME
 
 BASE = 'base.json'
 ENCODING = "utf-8"
+TERMINAL_WIDTH = 60
+
+def cls():
+    global TERMINAL_WIDTH
+    TERMINAL_WIDTH = gts().columns
+    if OSNAME == 'nt':
+        system('cls')
+    else:
+        system('clear')
 
 class Editor:
     def __init__(self):
@@ -24,13 +34,13 @@ class Editor:
     def menu_principal(self):
         cls()
         print(f'>/')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         for materia in self.materias:
             print(f' {materia} ', end="|")
         print()
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Escolha uma opção para começar:", style="fg:cyan")
         escolha = questionary.select(
             "Opção:",
@@ -47,10 +57,10 @@ class Editor:
     def selecionar_materia(self):
         cls()
         print(f'>/')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print(f'{"Seleção de Matéria":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Seleção de Matéria":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Escolha uma matéria para editar:", style="fg:cyan")
         escolha = questionary.select(
             "Matéria:",
@@ -61,13 +71,13 @@ class Editor:
     def menu_materia(self, materia):
         cls()
         print(f'>/{materia}')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         for assunto in self.base[materia]:
             print(f' {assunto} ', end="|")
         print()
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Escolha uma opção para editar a matéria:", style="fg:cyan")
         escolha = questionary.select(
             "Opção:",
@@ -84,10 +94,10 @@ class Editor:
     def selecionar_assunto(self, materia):
         cls()
         print(f'>/{materia}')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print(f'{"Seleção de Assunto":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Seleção de Assunto":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Escolha um assunto para editar:", style="fg:cyan")
         escolha = questionary.select(
             "Assunto:",
@@ -98,9 +108,9 @@ class Editor:
     def menu_assunto(self, materia, assunto):
         cls()
         print(f'>/{materia}/{assunto}')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Escolha uma opção para editar o assunto:", style="fg:cyan")
         escolha = questionary.select(
             "Opção:",
@@ -115,19 +125,20 @@ class Editor:
     def menu_editar_nos(self, materia, assunto):
         cls()
         print(f'>/{materia}/{assunto}')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print(f'{"Edição de Nós":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Edição de Nós":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         for no, num in self.base[materia][assunto]['nodes'].items():
             print(f' {no}:{num} ', end="|")
         print()
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Escolha uma opção para editar os nós:", style="fg:cyan")
         escolha = questionary.select(
             "Opção:",
             choices=[
                 "1. Adicionar Nó",
+                "1-1. Adicionar Nó e Conectar",
                 "2. Editar Nó",
                 "3. Remover Nó",
                 "0. Voltar"
@@ -138,10 +149,10 @@ class Editor:
     def escolher_no(self, materia, assunto):
         cls()
         print(f'>/{materia}/{assunto}')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print(f'{"Escolha de Nó":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Escolha de Nó":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Escolha um nó para editar:", style="fg:cyan")
         escolha = questionary.select(
             "Nó:",
@@ -149,8 +160,152 @@ class Editor:
         ).ask()
         return escolha
     
-    def adicionar_no(self, materia, assunto, no):
-        pass
+    def adicionar_no(self, materia, assunto):
+        nodes = self.base[materia][assunto]['nodes']
+        cls()
+        print(f'>/{materia}/{assunto}')
+        print("-=" * (TERMINAL_WIDTH//2))
+        
+        run = True
+        while run:
+            chave = questionary.text("Digite o nome do nó:").ask()
+            if chave in nodes:
+                questionary.print("Esse nó já existe. Tente novamente.", style="fg:red")
+            else:
+                run = False
+        
+        lista_valores = list(nodes.values())
+        if len(lista_valores) > 0:
+            assist = questionary.confirm(f"Deseja usar o número do último nó + 1? ({lista_valores[-1]} +1) [NO/yes]", default=False).ask()
+        
+        if assist:
+            valor = lista_valores[-1] + 1
+        else:
+            run = True
+            while run:
+                valor = questionary.text("Digite o número do nó:").ask()
+                if not valor.isdigit():
+                    questionary.print("O número do nó deve ser um valor inteiro. Tente novamente.", style="fg:red")
+                else:
+                    run = False
+        nodes[chave] = int(valor)
+        questionary.print(f"Nó '{chave}':{valor} adicionado com sucesso!", style="fg:green")
+        input("Pressione Enter para continuar...")
+        return (chave, valor)
+    
+    def conectar_no(self, materia, assunto, no:str):
+        nodes = self.base[materia][assunto]['nodes']
+        edges = self.base[materia][assunto]['edges']
+        cls()
+        print(f'>/{materia}/{assunto}')
+        print("-=" * (TERMINAL_WIDTH//2))
+
+        # conected_nodes_as_P = []
+        # conected_nodes_as_R = []
+        # for edge in edges:
+        #     if edge[0] == nodes[no]:
+        #         conected_nodes_as_P.append(edge)
+        #     if edge[1] == nodes[no]:
+        #         conected_nodes_as_R.append(edge)
+        
+        while True:
+            no_destino: str = questionary.select(
+                "Escolha o outro nó:",
+                choices= list(nodes.keys())
+            ).ask()
+            escolha = questionary.select(
+                "Deseja conectar este nó como P ou R?",
+                default="P",
+                choices=["P", "R", "0"]
+            ).ask()
+            if escolha == "0":
+                questionary.print("Conexão cancelada. Voltando ao menu de edição de nós.", style="fg:cyan")
+                input("Pressione Enter para continuar...")
+                break
+            if escolha == "P":
+                # conectar como P
+                edges.append([nodes[no], nodes[no_destino]])
+                questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Pergunta para '{no_destino}:{nodes[no_destino]}'", style="fg:green")
+                # conected_nodes_as_P.append([nodes[no], nodes[no_destino]])
+            else:
+                # conectar como R
+                edges.append([nodes[no_destino], nodes[no]])
+                questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Resposta para '{no_destino}:{nodes[no_destino]}'", style="fg:green")
+                # conected_nodes_as_R.append([nodes[no_destino], nodes[no]])
+
+        # questionary.print(f"Nós conectados como P: {conected_nodes_as_P}")
+        # questionary.print(f"Nós conectados como R: {conected_nodes_as_R}")
+    
+    def full_conectar_no(self, materia, assunto, no:str):
+        nodes = self.base[materia][assunto]['nodes']
+        edges = self.base[materia][assunto]['edges']
+        cls()
+        print(f'>/{materia}/{assunto}')
+        print("-=" * (TERMINAL_WIDTH//2))
+
+        escolha = questionary.select(
+            "Deseja conectar este nó como P ou R?",
+            default="P",
+            choices=["P", "R", "0"]
+        ).ask()
+        if escolha == "0":
+            questionary.print("Conexão cancelada. Voltando ao menu de edição de nós.", style="fg:cyan")
+            input("Pressione Enter para continuar...")
+            return 0
+        if escolha == "P":
+            # conectar como P
+            choices = []
+            for node in nodes:
+                add = True
+                for edge in edges:
+                    if edge[0] == nodes[no] and edge[1] == nodes[node]:
+                        choices.append(questionary.Choice(title=f"{edge[1]}", value=edge[1], checked=add))
+                        add = False
+                        break
+                if add:
+                    choices.append(questionary.Choice(title=f"{nodes[node]}", value=nodes[node], checked=add))
+            no_destino: str = questionary.checkbox(
+                "Escolha o outro nó:",
+                choices= choices
+            ).ask()
+            for destino in no_destino:
+                add = True
+                for edge in edges:
+                    if edge[0] == nodes[no] and edge[1] == destino:
+                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Pergunta para '{destino}:{nodes[destino]}'", style="fg:yellow")
+                        break
+                if add:
+                    edges.append([nodes[no], destino])
+                    questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Pergunta para '{destino}:{nodes[destino]}'", style="fg:green")
+            questionary.print(f"Nós '{no}:{nodes[no]}' conectados como Pergunta para {no_destino}", style="fg:green")
+            return 1
+        else:
+            # conectar como R
+            choices = []
+            for node in nodes:
+                add = True
+                for edge in edges:
+                    if edge[0] == nodes[node] and edge[1] == nodes[no]:
+                        choices.append(questionary.Choice(title=f"{edge[1]}", value=edge[1], checked=add))
+                        add = False
+                        break
+                if add:
+                    choices.append(questionary.Choice(title=f"{nodes[node]}", value=nodes[node], checked=add))
+            no_destino: str = questionary.checkbox(
+                "Escolha o outro nó:",
+                choices= choices
+            ).ask()
+            for destino in no_destino:
+                add = True
+                for edge in edges:
+                    if edge[0] == destino and edge[1] == nodes[no]:
+                        questionary.print(f"Nó '{no}:{nodes[no]}' já conectado como Resposta para '{destino}:{nodes[destino]}'", style="fg:yellow")
+                        break
+                if add:
+                    edges.append([destino, nodes[no]])
+                    questionary.print(f"Nó '{no}:{nodes[no]}' conectado como Resposta para '{destino}:{nodes[destino]}'", style="fg:green")
+            questionary.print(f"Nós '{no}:{nodes[no]}' conectados como Resposta para {no_destino}", style="fg:green")
+            return 1
 
     def editar_no(self, materia, assunto, no):
         pass
@@ -161,14 +316,14 @@ class Editor:
     def exibe_nos(self, materia, assunto):
         cls()
         print(f'>/{materia}/{assunto}')
-        print("-=" * 30)
-        print(f'{"EDITOR DE BASE DE PERGUNTAS":^60}')
-        print(f'{"Exibição de Nós":^60}')
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Exibição de Nós":^{TERMINAL_WIDTH}}')
+        print("-=" * (TERMINAL_WIDTH//2))
         for no, num in self.base[materia][assunto]['nodes'].items():
             print(f' {no}:{num} ', end="|")
         print()
-        print("-=" * 30)
+        print("-=" * (TERMINAL_WIDTH//2))
         questionary.print("Pressione Enter para continuar...", style="fg:cyan")
         input()
     
@@ -197,10 +352,15 @@ class Editor:
                                                 ME = self.menu_editar_nos(a_materia, o_assunto)
                                                 if ME == "0. Voltar":
                                                     break
+                                                elif ME == "1. Adicionar Nó":
+                                                    self.adicionar_no(a_materia, o_assunto)
+                                                    continue
+                                                elif ME == "1-1. Adicionar Nó e Conectar":
+                                                    no, valor = self.adicionar_no(a_materia, o_assunto)
+                                                    self.conectar_no(a_materia, o_assunto, no)
+                                                    continue
                                                 o_no = self.escolher_no(a_materia, o_assunto)
                                                 match ME:
-                                                    case "1. Adicionar Nó":
-                                                        self.adicionar_no(a_materia, o_assunto,o_no)
                                                     case "2. Editar Nó":
                                                         self.editar_no(a_materia, o_assunto,o_no)
                                                     case "3. Remover Nó":
