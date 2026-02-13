@@ -1,9 +1,12 @@
 from json import load, dump
 # from canivete import cls
 import questionary
+from questionary import Choice
 from os import get_terminal_size as gts, system, name as OSNAME
 
-BASE = 'base.json'
+BASE = 'new_base.json'
+#PREFIXO = "new_"
+PREFIXO = ""
 ENCODING = "utf-8"
 TERMINAL_WIDTH = 60
 
@@ -33,8 +36,8 @@ class Editor:
             self.materias = list(self.base.keys())
     
     def save_base(self):
-        global BASE, ENCODING
-        with open("new_"+BASE, 'w', encoding=ENCODING) as f:
+        global BASE, ENCODING, PREFIXO
+        with open(PREFIXO+BASE, 'w', encoding=ENCODING) as f:
             dump(self.base, f, indent=4, ensure_ascii=False)
     
     def menu_principal(self):
@@ -268,11 +271,11 @@ class Editor:
                 add = True
                 for edge in edges:
                     if edge[0] == nodes[no] and edge[1] == nodes[node]:
-                        choices.append(questionary.Choice(title=f"{node}", value=edge[1], checked=True))
+                        choices.append(Choice(title=f"{node}", value=edge[1], checked=True))
                         add = False
                         break
                 if add:
-                    choices.append(questionary.Choice(title=f"{node}", value=nodes[node], checked=False))
+                    choices.append(Choice(title=f"{node}", value=nodes[node], checked=False))
             no_destino: str = questionary.checkbox(
                 "Escolha o outro nó:",
                 choices= choices
@@ -297,6 +300,7 @@ class Editor:
                     edges.append([destino, nodes[no]])
                     questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Resposta para 'X:{destino}'", style="fg:green")
             questionary.print(f"Nós '{no}:{nodes[no]}' conectados para {no_destino}", style="fg:green")
+            input()
             return 1
         elif escolha == "P":
             # conectar como P
@@ -305,11 +309,11 @@ class Editor:
                 add = True
                 for edge in edges:
                     if edge[0] == nodes[no] and edge[1] == nodes[node]:
-                        choices.append(questionary.Choice(title=f"{node}", value=edge[1], checked=True))
+                        choices.append(Choice(title=f"{node}", value=edge[1], checked=True))
                         add = False
                         break
                 if add:
-                    choices.append(questionary.Choice(title=f"{node}", value=nodes[node], checked=False))
+                    choices.append(Choice(title=f"{node}", value=nodes[node], checked=False))
             no_destino: str = questionary.checkbox(
                 "Escolha o outro nó:",
                 choices= choices
@@ -325,6 +329,7 @@ class Editor:
                     edges.append([nodes[no], destino])
                     questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Pergunta para 'X:{destino}'", style="fg:green")
             questionary.print(f"Nós '{no}:{nodes[no]}' conectados como Pergunta para {no_destino}", style="fg:green")
+            input()
             return 1
         else:
             # conectar como R
@@ -333,11 +338,11 @@ class Editor:
                 add = True
                 for edge in edges:
                     if edge[0] == nodes[node] and edge[1] == nodes[no]:
-                        choices.append(questionary.Choice(title=f"{node}", value=edge[1], checked=True))
+                        choices.append(Choice(title=f"{node}", value=edge[1], checked=True))
                         add = False
                         break
                 if add:
-                    choices.append(questionary.Choice(title=f"{node}", value=nodes[node], checked=False))
+                    choices.append(Choice(title=f"{node}", value=nodes[node], checked=False))
             no_destino: str = questionary.checkbox(
                 "Escolha o outro nó:",
                 choices= choices
@@ -353,6 +358,7 @@ class Editor:
                     edges.append([destino, nodes[no]])
                     questionary.print(f"Nó '{no}:{nodes[no]}' conectou-se como Resposta para 'X:{destino}'", style="fg:green")
             questionary.print(f"Nós '{no}:{nodes[no]}' conectados como Resposta para {no_destino}", style="fg:green")
+            input()
             return 1
 
     def editar_no(self, materia, assunto, no: str):
@@ -374,11 +380,48 @@ class Editor:
         questionary.print(f"Nó '{no}:{nodes[no]}' editado para '{no}:{novo_nome}'", style="fg:green")
         input("Pressione Enter para continuar...")
 
-    def remover_no(self, materia, assunto, no):
-        pass
+    def remover_no(self, materia, assunto, no: str):
+        cls()
+        print(f'>/{materia}/{assunto}')
+        print("-=" * (TERMINAL_WIDTH//2))
+        print(f'REMOVENDO NÓ "{no}"')
+        escolha = questionary.confirm(f"Tem certeza que deseja remover o nó '{no}'? Isso também removerá todas as conexões associadas a ele.", default=False).ask()
+        if escolha:
+            # remover conexões associadas
+            nodes = self.base[materia][assunto]['nodes']
+            edges = self.base[materia][assunto]['edges'][:]
+            no_id = nodes[no]
+            for edge in edges:
+                if edge[0] == no_id or edge[1] == no_id:
+                    self.base[materia][assunto]['edges'].remove(edge)
+            # remover nó
+            del nodes[no]
+            questionary.print(f"Nó '{no}' e suas conexões foram removidos com sucesso!", style="fg:green")
+            input()
+            return 1
+        else:
+            questionary.print(f'Nó {no} não removido, retornando...', style='fg:green')
+        return 0
 
-    def remover_aresta(self, materia, assunto, no):
-        pass
+    def remover_aresta(self, materia, assunto, no: str):
+        cls()
+        print(f'>/{materia}/{assunto}')
+        print("-=" * (TERMINAL_WIDTH//2))
+        nodes = self.base[materia][assunto]['nodes']
+        edges = self.base[materia][assunto]['edges']
+        targets = []
+        for edge in edges:
+            if nodes[no] == edge[0] or nodes[no] == edge[1]:
+                targets.append(Choice(f"[{find_key_by_value(nodes, edge[0])},{find_key_by_value(nodes, edge[1])}]", edge))
+        
+        to_remove = questionary.checkbox(
+            f"Quais arestas do nó {no} você quer remover?",
+            choices=targets
+            ).ask()
+        for item in to_remove:
+            edges.remove(item)
+            questionary.print(f"Aresta {item} removida com sucesso!", style="fg:green")
+        input("Pressione Enter para continuar...")
 
     def ver_conexoes_no(self, materia, assunto, no: str):
         cls()
