@@ -9,6 +9,7 @@ BASE = 'new_base.json'
 PREFIXO = ""
 ENCODING = "utf-8"
 TERMINAL_WIDTH = 60
+SAIDA = "- SAIR -"
 
 def cls():
     global TERMINAL_WIDTH
@@ -70,12 +71,72 @@ class Editor:
         print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
         print(f'{"Seleção de Matéria":^{TERMINAL_WIDTH}}')
         print("-=" * (TERMINAL_WIDTH//2))
+        if len(self.materias) == 0:
+            questionary.print("Nenhuma matéria encontrada. Por favor, adicione uma matéria primeiro.", style="fg:red")
+            input("Pressione ENTER para continuar...")
+            return SAIDA
+        elif len(self.materias) == 1:
+            questionary.print(f"Única matéria encontrada: '{self.materias[0]}'. Selecionando automaticamente.", style="fg:green")
+            input("Pressione ENTER para continuar...")
+            return self.materias[0]
         questionary.print("Escolha uma matéria para editar:", style="fg:cyan")
         escolha = questionary.select(
             "Matéria:",
-            choices= self.materias + ["0"]
+            choices= self.materias + [SAIDA]
         ).ask()
         return escolha
+    
+    def adicionar_materia(self):
+        print(f'>/')
+        print("-=" * (TERMINAL_WIDTH//2))
+        while True:
+            outra_materia = questionary.text("Qual o nome da nova matéria?").ask()
+            escolha = questionary.confirm("Adicionar à base?").ask()
+            if escolha:
+                self.base[outra_materia] = {}
+                questionary.print(f'Matéria {outra_materia} adicionado com sucesso!', style='fg:green')
+            else:
+                questionary.print("Skipping...", style="fg:red")
+            input("Pressione ENTER para continuar...")
+
+    def remover_materia(self, materia):
+        cls()
+        print(f'>/')
+        print("-=" * (TERMINAL_WIDTH//2))
+        if materia == SAIDA:
+            questionary.print("Skipping...", style="fg:red")
+            input("Pressione ENTER para continuar...")
+            return 0
+        escolha = questionary.confirm(f"Tem certeza que deseja remover a matéria '{materia}'? Isso também removerá todos os assuntos e nós associados a ela.", default=False).ask()
+        if escolha:
+            del self.base[materia]
+            questionary.print(f'Matéria {materia} removida com sucesso!', style='fg:green')
+            input("Pressione ENTER para continuar...")
+            return 1
+    
+    def editar_nome_materia(self, materia):
+        cls()
+        print(f'>/')
+        print("-=" * (TERMINAL_WIDTH//2))
+        if materia == SAIDA:
+            questionary.print("Skipping...", style="fg:red")
+            input("Pressione ENTER para continuar...")
+            return 0
+        while True:
+            questionary.print(f'Editar o nome de uma matéria poderá afetar sua posição dentro do dicionário.', style="fg:red")
+            nova_materia = questionary.text("Digite o novo nome da matéria:").ask()
+            if not nova_materia.strip():
+                questionary.print("Nome inválido. Nenhum alteração foi feita.", style="fg:red")
+                input("Pressione Enter para continuar...")
+                continue
+            break
+        escolha = questionary.confirm(f"Tem certeza que deseja editar o nome da matéria '{materia}' para '{nova_materia}'? Isso também editará o nome de todos os assuntos e nós associados a ela.", default=False).ask()
+        if escolha:
+            self.base[nova_materia] = self.base.pop(materia)
+            questionary.print(f'Matéria "{materia}" editada para "{nova_materia}" com sucesso!', style='fg:green')
+        input("Pressione ENTER para continuar...")
+        return 1
+
     
     def menu_materia(self, materia):
         cls()
@@ -107,10 +168,19 @@ class Editor:
         print(f'{"EDITOR DE BASE DE PERGUNTAS":^{TERMINAL_WIDTH}}')
         print(f'{"Seleção de Assunto":^{TERMINAL_WIDTH}}')
         print("-=" * (TERMINAL_WIDTH//2))
+        if len(self.base[materia]) == 0:
+            questionary.print("Nenhum assunto encontrado. Por favor, adicione um assunto primeiro.", style="fg:red")
+            input("Pressione ENTER para continuar...")
+            return SAIDA
+        elif len(self.base[materia]) == 1:
+            unica_chave = list(self.base[materia].keys())[0]
+            questionary.print(f"Único assunto encontrado: '{unica_chave}'. Selecionando automaticamente.", style="fg:green")
+            input("Pressione ENTER para continuar...")
+            return unica_chave
         questionary.print("Escolha um assunto para editar:", style="fg:cyan")
         escolha = questionary.select(
             "Assunto:",
-            choices= list(self.base[materia].keys()) + ["0"]
+            choices= list(self.base[materia].keys()) + [SAIDA]
         ).ask()
         return escolha
     
@@ -168,7 +238,7 @@ class Editor:
         questionary.print("Escolha um nó para editar:", style="fg:cyan")
         escolha = questionary.select(
             "Nó:",
-            choices= list(self.base[materia][assunto]['nodes'].keys()) + ["0"]
+            choices= list(self.base[materia][assunto]['nodes'].keys()) + [SAIDA]
         ).ask()
         return escolha
     
@@ -228,9 +298,9 @@ class Editor:
             escolha = questionary.select(
                 "Deseja conectar este nó como P ou R?",
                 default="P",
-                choices=["P", "R", "0"]
+                choices=["P", "R", SAIDA]
             ).ask()
-            if escolha == "0":
+            if escolha == SAIDA:
                 questionary.print("Conexão cancelada. Voltando ao menu de edição de nós.", style="fg:cyan")
                 input("Pressione Enter para continuar...")
                 break
@@ -258,9 +328,9 @@ class Editor:
         escolha = questionary.select(
             "Deseja conectar este nó como P ou R?",
             default="P",
-            choices=["P", "R","PR", "0"]
+            choices=["P", "R","PR", SAIDA]
         ).ask()
-        if escolha == "0":
+        if escolha == SAIDA:
             questionary.print("Conexão cancelada. Voltando ao menu de edição de nós.", style="fg:cyan")
             input("Pressione Enter para continuar...")
             return 0
@@ -464,14 +534,14 @@ class Editor:
             match MP:
                 case "1. Navegar em Matérias":
                     a_materia = self.selecionar_materia()
-                    if a_materia == "0":
+                    if a_materia == SAIDA:
                         continue
                     while True:
                         MM = self.menu_materia(a_materia)
                         match MM:
                             case "1. Navegar em Assuntos":
                                 o_assunto = self.selecionar_assunto(a_materia)
-                                if o_assunto == "0":
+                                if o_assunto == SAIDA:
                                     continue
                                 while True:
                                     MA = self.menu_assunto(a_materia, o_assunto)
@@ -508,6 +578,12 @@ class Editor:
                                             break
                             case "0. Voltar":
                                 break
+                case "2. Adicionar Matéria":
+                    self.adicionar_materia()
+                case "3. Editar Nome de Matéria":
+                    self.editar_nome_materia(self.selecionar_materia())
+                case "4. Remover Matéria":
+                    self.remover_materia(self.selecionar_materia())
                 case "0. Sair e Salvar":
                     self.save_base()
                     break
