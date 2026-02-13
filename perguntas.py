@@ -1,9 +1,19 @@
 import questionary
 from random import randint, choice
 from commentjson import load
-from canivete import *
+from os import get_terminal_size as gts, system, name as OSNAME
+from canivete import semacento
 
 BASE = 'base.json'
+TERMINAL_WIDTH = 60
+
+def cls():
+    global TERMINAL_WIDTH
+    TERMINAL_WIDTH = gts().columns
+    if OSNAME == 'nt':
+        system('cls')
+    else:
+        system('clear')
 
 class Perguntas:
     def __init__(self):
@@ -26,15 +36,15 @@ class Perguntas:
     def menu(self):
         self.load_base()
         cls()
-        print("-=" * 30)
-        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^60}')
-        print(f'{"Menu Principal":^60}')
-        print("-=" * 30)
+        print("-=" * TERMINAL_WIDTH//2)
+        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Menu Principal":^{TERMINAL_WIDTH}}')
+        print("-=" * TERMINAL_WIDTH//2)
         print("1. Jogar com TODO o conteúdo")
         print("2. Jogar por Matéria")
         print("3. Jogar por Assunto")
         print("0. Sair")
-        print("-=" * 30)
+        print("-=" * TERMINAL_WIDTH//2)
         questionary.print("Escolha uma opção para começar:", style="fg:cyan")
         escolha = questionary.select(
             "Opção:",
@@ -46,10 +56,10 @@ class Perguntas:
     
     def menu_materia(self):
         cls()
-        print("-=" * 30)
-        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^60}')
-        print(f'{"Menu por Matéria":^60}')
-        print("-=" * 30)
+        print("-=" * TERMINAL_WIDTH//2)
+        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Menu por Matéria":^{TERMINAL_WIDTH}}')
+        print("-=" * TERMINAL_WIDTH//2)
         questionary.print("Escolha uma matéria para jogar:", style="fg:cyan")
         escolha = questionary.select(
             "Matéria:",
@@ -59,10 +69,10 @@ class Perguntas:
     
     def menu_assunto(self, materia):
         cls()
-        print("-=" * 30)
-        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^60}')
-        print(f'{"Menu por Assunto":^60}')
-        print("-=" * 30)
+        print("-=" * TERMINAL_WIDTH//2)
+        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^{TERMINAL_WIDTH}}')
+        print(f'{"Menu por Assunto":^{TERMINAL_WIDTH}}')
+        print("-=" * TERMINAL_WIDTH//2)
         questionary.print("Escolha um assunto para jogar:", style="fg:cyan")
         escolha = questionary.select(
             "Assunto:",
@@ -72,9 +82,9 @@ class Perguntas:
 
     def mostrar_titulo(self):
         cls()
-        print("🎯" * 30)
-        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^60}')
-        print("🎯" * 30)
+        print("🎯" * (TERMINAL_WIDTH//2))
+        print(f'{"JOGO DE PERGUNTAS E RESPOSTAS":^{TERMINAL_WIDTH}}')
+        print("🎯" * (TERMINAL_WIDTH//2))
         print(f"📊 Rodada: {self.rodada}")
         print(f"✅ Acertos: {self.pontuacao}/{self.rodada - 1}")
         print(f"Matéria: {self.tema:<10} | Assunto: {self.subtema.capitalize()}")
