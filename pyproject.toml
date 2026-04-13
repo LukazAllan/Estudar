@@ -1,0 +1,15 @@
+[project]
+name = "estudar"
+version = "0.1.0"
+description = "Quiz and study tool with TUI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "commentjson>=0.9.0",
+    "wcwidth>=0.2.8",
+    "textual>=0.44",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

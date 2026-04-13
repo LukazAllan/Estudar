@@ -1,0 +1,99 @@
+Screen {
+    align: center middle;
+    background: $surface;
+}
+
+Button {
+    width: 30;
+    margin: 1 2;
+}
+
+.button-row {
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    text-style: bold;
+    text-align: center;
+    width: 100%;
+    height: 3;
+    padding: 1;
+    color: $primary;
+}
+
+.info-text {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 1 0;
+}
+
+.result-correct {
+    color: $success;
+    text-style: bold;
+    text-align: center;
+}
+
+.result-wrong {
+    color: $error;
+    text-style: bold;
+}
+
+.quiz-question {
+    margin: 1 2;
+    padding: 1;
+    background: $panel;
+    border: solid $primary;
+    width: 100%;
+    height: auto;
+}
+
+.subject-list {
+    width: 100%;
+    height: 1fr;
+}
+
+#subject-name {
+    text-style: bold;
+    color: $accent;
+}
+
+NodeTableScreen DataTable {
+    width: 100%;
+    height: 1fr;
+}
+
+NodeDetailScreen Static {
+    margin: 0 1;
+}
+
+ModalScreen {
+    align: center middle;
+}
+
+.dialog {
+    width: 50;
+    height: auto;
+    padding: 1;
+    background: $surface;
+    border: solid $primary;
+}
+
+.dialog-title {
+    text-style: bold;
+    text-align: center;
+    height: 3;
+}
+
+Checkbox {
+    margin: 0 1;
+}
+
+Rules {
+    width: 100%;
+    height: auto;
+    margin: 1 0;
+}
